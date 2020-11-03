@@ -1,0 +1,30 @@
+Protocol 2
+SyslogFacility AUTHPRIV
+LogLevel INFO
+PermitRootLogin without-password
+StrictModes yes
+RSAAuthentication yes
+DSAAuthentication yes
+IgnoreRhosts yes
+RhostsRSAAuthentication no
+X11Forwarding no
+AllowTcpForwarding no
+TCPKeepAlive yes
+PermitUserEnvironment no
+LoginGraceTime 45
+MaxStartups 5
+Subsystem   sftp internal-sftp -f AUTH -l INFO
+UseDNS no
+UsePAM yes
+MaxAuthTries 3
+ClientAliveInterval 3600
+ClientAliveCountMax 0
+PrintMotd no
+AcceptEnv USERLW
+TrustedUserCAKeys /etc/ssh/trusted-user-ca-keys.pem
+# restrict ciphers to exclude arcfour and cbc for Nessus
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+MACs hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160@openssh.com
+Match Group _sysadms
+    PasswordAuthentication no
+    TrustedUserCAKeys /etc/ssh/trusted-user-ca-keys.pem

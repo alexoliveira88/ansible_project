@@ -1,0 +1,12 @@
+---
+- import_tasks: packages-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- import_tasks: packages-Debian.yml
+  when: ansible_os_family == 'Debian'
+
+- import_tasks: setup.yml
+
+- import_tasks: users.yml
+
+

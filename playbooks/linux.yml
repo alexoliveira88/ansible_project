@@ -1,0 +1,51 @@
+---
+- name: Execute roles to generic Linux environment 
+  hosts: all
+  gather_facts: true
+ ## if gather_facts is false enable task below 
+ # pre_tasks:
+ #   - name: Collect only facts returned by facter
+ #     setup:
+ #       filter: ansible_local
+ #     tags: Files
+  pre_tasks:
+    - name: create directory 
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: '0775'
+      loop:
+        - /etc/locaweb
+        - /etc/locaweb/monitoring
+        - /etc/ansible/facts.d
+      tags: Files, Facts, Hardening
+    
+    - name: Create a static custom fact
+      copy:
+        content: 0
+        dest: "{{ item }}"
+        force: no
+      loop:
+        #Excecao do SAP para a rede do varejo
+        - /etc/ansible/facts.d/sap.fact
+        #Monitoramento check-mk com usuario oracle
+        - /etc/ansible/facts.d/oracle.fact
+        #Excecao do ambiente openshift
+        - /etc/ansible/facts.d/openshift.fact
+        #Excecao para dns isilon
+        - /etc/ansible/facts.d/isilon.fact
+        #Excecao para dns isilon da rede do varejo
+        - /etc/ansible/facts.d/sap_isilon.fact
+        #Excecao para o ambiente PCI da wex
+        - /etc/ansible/facts.d/pci_wex.fact
+        #Excecao para customizar a conf do telegraf 
+        - /etc/ansible/facts.d/customtelegraf.fact
+      notify: 
+        - Removing_facts_cache
+        - Caching_facts
+      tags: Files, Facts, Hardening
+
+
+  roles:
+    - {role: linux}
+

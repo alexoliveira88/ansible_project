@@ -1,0 +1,58 @@
+---
+#######################REPOSITORY#######################################
+- name: Debian Repository 
+  copy:
+    src: apt/sources.list_{{ ansible_distribution_major_version }}
+    dest: /etc/apt/sources.list
+    mode: '0644'
+    owner: root
+    group: root
+  tags: Files, Repository
+########################Files############################################
+- name: Debian Recursive DNS
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf
+    mode: '0644'
+    owner: root
+    group: root
+  tags: Files
+
+########################Key Bacula####################################
+- name: Debian Add an apt key to bacula-enterprise
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: AD67CF385258DBBB
+########################Packages#######################################
+- name: Debian Update cache
+  apt:
+    name: telnet
+    state: present
+    update_cache: yes
+  ignore_errors: yes
+
+- name: Debian install apt-transport-https
+  apt:
+    name: apt-transport-https
+    state: present
+
+- name: Debian Family installation package
+  apt:
+     name: [ 'screen','tcpdump','dnsutils','postfix','tzdata','vim', 'bash-completion','mlocate','ntp','ntpdate','nfs-common','curl','wget','telegraf','rsyslog','sudo','bacula-enterprise-client' ]
+     update_cache: yes
+     state: present
+  tags: Packages
+
+- name: Debian install crowdstrike
+  package:
+    name: falcon-sensor
+    state: present
+  notify: appliyng license crowdstrike
+  tags: Packages
+
+- name: Debian Family delete package
+  apt:
+    name: [ 'bacula-fd','bacula-common','nagios-nrpe-server','leela-agent','leela-client', 'leela-c', 'leela-python', 'collectd', 'uptimed', 'motd']
+    state: absent
+  tags: Packages
+

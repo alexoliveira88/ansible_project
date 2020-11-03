@@ -1,0 +1,61 @@
+#!/usr/bin/python
+## Managed by Ansible
+import os 
+import sys
+import socket
+import datetime
+import commands
+
+try:
+    import requests
+except:
+    pass
+
+try:
+    import json
+except:
+    import simplejson as json
+
+try:
+    import hashlib
+except ImportError:
+    import md5 as hashlib
+
+socket.setdefaulttimeout(10)
+def run_cmk(me, output, status):    
+    # http://monitoracao.cmk.lwmon.com.br/cmk.php
+    endpoint = sys.argv[1]
+
+    if status == 0:
+        data = {
+            "status": status,
+            "hostname": me.lower(),
+            "data": output,
+            #"token": hashlib.sha256("{0},{1},{2}".format(datetime.datetime.now().strftime("%Y%m%d%H"), me.lower(), "cfbf3e4c41351f2b91f13f0a7f2a63c9")).hexdigest(),
+        }
+        try:
+            requests.post(endpoint, json=data).text
+        except:
+            import urllib2
+            req = urllib2.Request(endpoint)
+            req.add_header('Content-Type','application/json')
+            f = urllib2.urlopen(req, data=json.dumps(data))
+
+me = socket.gethostname().split('.', 1)[0]
+status, output = commands.getstatusoutput("/usr/bin/cmk-agent")
+run_cmk(me, output, status)
+
+# post for monitoring-mysharedhostxxxx
+diretorio = "/etc/locaweb/"
+items = []
+if os.path.exists(diretorio):
+    items = os.listdir(diretorio)
+
+newlist = []
+for names in items:
+    if names.startswith("monitoring-"):
+        os.environ["LW_PLUGINS_CONFDIR"] = diretorio + names
+        me = names.split("-")[1]
+        status, output = commands.getstatusoutput("/usr/bin/locaweb-plugins-agent --no-check-mk --no-local")
+        run_cmk(me, output, status)
+

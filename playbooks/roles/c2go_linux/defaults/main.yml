@@ -1,0 +1,10 @@
+---
+# defaults file for linux
+
+### usuarios no array abaixo sao adicionados em todos os servidores linux, exceto pci
+nextios_usersadd: [alex.oliveira]
+
+### usuario no array sao removidos em todos os servidores linux, exceto pci
+nextios_usersdel: [testeeee]
+
+

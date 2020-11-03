@@ -1,0 +1,5 @@
+MAILTO=""
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin
+* * * * * oracle /usr/bin/pgrep -f /usr/bin/run-cmk-agent|| test -x /usr/bin/python && /usr/bin/python /usr/bin/run-cmk-agent https://ed.cmk.lwmon.com.br/cmk.php
+#* * * * * root /usr/bin/pgrep -f run-cmk-agent || test -x /usr/bin/python || /usr/bin/run-cmk-agent https://ed.cmk.lwmon.com.br/cmk.php
+* * * * * root /bin/bash /root/ajusta_yaml_cmk.sh Executar

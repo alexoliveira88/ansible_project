@@ -1,0 +1,46 @@
+---
+- name: restart sshd
+  service:
+    name: sshd
+    state: reloaded
+    
+- name: restart chronyd
+  service:
+    name: chronyd
+    state: restarted
+
+- name: restart ntpd
+  service:
+    name: ntpd
+    state: restarted
+  when: ansible_os_family == 'RedHat'
+
+- name: restart ntpd
+  service:
+    name: ntp
+    state: restarted
+  when: ansible_os_family == 'Debian'
+
+- name: restart telegraf
+  service:
+    name: telegraf
+    state: restarted
+
+- name: reload rsyslog
+  service:
+    name: rsyslog
+    state: reloaded
+
+- name: restart bacula-fd
+  service:
+    name: bacula-fd
+    state: restarted
+
+- name: appliyng license crowdstrike 
+#  shell: /opt/CrowdStrike/falconctl -s --cid=84086837C285469483E349B3CE74634C-61
+  shell: /bin/echo 'teste CS' > /tmp/teste
+
+- name: apt_update
+  shell: /usr/bin/apt-get update
+  ignore_errors: yes 
+

@@ -1,0 +1,167 @@
+---
+###########################Files###########################################
+- name: Files that don't need to reloaded
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+
+  loop:
+    - { src: 'monitoring/cmk-agent', dest: '/usr/bin/cmk-agent', mode: '0755', owner: root, group: root }
+    - { src: 'monitoring/cmk-locaweb-plugins', dest: '/usr/bin/cmk-locaweb-plugins', mode: '0755', owner: root, group: root }
+    - { src: 'monitoring/run-cmk-agent', dest: '/usr/bin/run-cmk-agent', mode: '0755', owner: root, group: root }
+###    - { src: 'monitoring/influx.yaml', dest: '/etc/locaweb/monitoring/influx.yaml', mode: '0644', owner: root, group: root }
+    - { src: 'sudoers.d/pcommands', dest: '/etc/sudoers.d/pcommands', mode: '0440', owner: root, group: root }
+    - { src: 'sudoers.d/Nextios-Sudo', dest: '/etc/sudoers.d/Nextios-Sudo', mode: '0440', owner: root, group: root }
+    - { src: 'securetty', dest: '/etc/securetty', mode: '0644', owner: root, group: root }
+  tags: Files
+
+- name: Bacula configuration
+  copy:
+    src: bacula-fd.conf
+    dest: /opt/bacula/etc/bacula-fd.conf
+    mode: '0644'
+    owner: root
+    group: root
+  notify: restart bacula-fd
+  tags: Files, Bacula
+
+- name: Telegraf configuration
+  copy:
+    src: telegraf.conf
+    dest: /etc/telegraf/telegraf.conf
+    mode: '0644'
+    owner: root
+    group: root
+  notify: restart telegraf
+  when: ansible_local['customtelegraf'] != 1
+  tags: Files
+
+- name: RHEL SSH configuration
+  copy:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+    mode: '0600'
+    owner: root
+    group: root
+  notify: restart sshd
+  when: (ansible_local['pci_wex'] != 1 and ansible_os_family == 'RedHat')
+  tags: Files
+
+- name: DEBIAN SSH configuration
+  copy:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+    mode: '0600'
+    owner: root
+    group: root
+  notify: restart ssh
+  when: ansible_os_family == 'Debian'
+  tags: Files
+
+- name: Monitoring run-cmk 
+  copy:
+    src: monitoring/run-cmk
+    dest: /etc/cron.d/run-cmk
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_local['oracle'] != 1 and ansible_hostname != 'corelcmap0002') 
+  tags: Files
+
+- name: run-cmk to Oracle environment
+  copy:
+    src: monitoring/run-cmk-oracle
+    dest: /etc/cron.d/run-cmk
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_local['oracle'] == 1
+  tags: Files
+
+- name: NTP to Sap Production
+  copy:
+    src: ntp-sap.conf
+    dest: /etc/ntp.conf
+    mode: '0600'
+    owner: root
+    group: root
+  when: ansible_local['sap'] == 1
+  tags: Files
+
+- name: NTP Configuration
+  copy:
+    src: ntp.conf
+    dest: /etc/ntp.conf
+    mode: '0600'
+    owner: root
+    group: root
+  when: ansible_local['sap'] != 1
+  tags: Files
+
+
+# Openshift usa selinux
+- name: RHEL Disable Selinux
+  copy:
+    src: selinux_config
+    dest: /etc/selinux/config
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_os_family == 'RedHat' and ansible_local['openshift'] != 1) 
+  tags: Files
+
+- name: Check that the /usr/bin/gcc exists
+  stat:
+    path: /usr/bin/gcc
+  register: gcc_result
+  tags: Files, Hardening
+
+- name: Check Permission gcc to Hardening
+  file:
+    path: /usr/bin/gcc
+    mode: 0750
+    owner: root
+    state: file
+  when: gcc_result.stat.exists
+  tags: Files, Hardening
+
+###########################################Services##########################
+- name: RHEL Start services, if not started
+  service:
+    name: '{{ item }}'
+    enabled: yes
+    state: started
+  loop:
+#  - telegraf
+  - falcon-sensor
+#  - bacula-fd
+  tags: Services
+  ignore_errors: yes
+  when: ansible_os_family == 'RedHat'
+
+- name: Debian Start services, if not started
+  service:
+    name: '{{ item }}'
+    enabled: yes
+    state: started
+  loop:
+#  - telegraf
+  - falcon-sensor
+#  - bacula-fd
+  tags: Services
+  ignore_errors: yes
+  when: ansible_os_family == 'Debian'
+
+#- name: Stopped and disabled Services
+#  service:
+#    name: '{{ item }}'
+#    enabled: no
+#    state: stopped
+#  loop:
+#  - cfengine3
+#  tags: Services
+#  when: ansible_local['openshift'] != 1
+

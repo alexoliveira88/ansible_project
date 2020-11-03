@@ -1,0 +1,5 @@
+#User_Alias SUDOROOTUSERS = alex.oliveira,_vnascimento
+User_Alias SUDOROOTUSERS = {{ item }}
+Cmnd_Alias SUDOROOTCMDS = /bin/su
+SUDOROOTUSERS ALL = NOPASSWD: SUDOROOTCMDS
+with_items: "{{ nextios_usersadd }}"

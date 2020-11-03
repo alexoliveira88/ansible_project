@@ -1,0 +1,5853 @@
+{
+    "_ansible_facts_gathered": true, 
+    "ansible_all_ipv4_addresses": [
+        "10.19.63.26", 
+        "10.33.6.26", 
+        "10.33.6.23", 
+        "10.33.6.15", 
+        "10.2.0.50", 
+        "169.254.2.209"
+    ], 
+    "ansible_all_ipv6_addresses": [
+        "fe80::1602:ecff:fe44:2eb8", 
+        "fe80::eeb1:d7ff:fe74:a0dc", 
+        "fe80::eeb1:d7ff:fe74:a0de"
+    ], 
+    "ansible_apparmor": {
+        "status": "disabled"
+    }, 
+    "ansible_architecture": "x86_64", 
+    "ansible_bios_date": "09/13/2016", 
+    "ansible_bios_version": "P89", 
+    "ansible_bond0": {
+        "active": true, 
+        "device": "bond0", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "off [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [requested on]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "10.33.6.26", 
+            "broadcast": "10.33.6.255", 
+            "netmask": "255.255.255.0", 
+            "network": "10.33.6.0"
+        }, 
+        "ipv4_secondaries": [
+            {
+                "address": "10.33.6.23", 
+                "broadcast": "10.33.6.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.33.6.0"
+            }, 
+            {
+                "address": "10.33.6.15", 
+                "broadcast": "10.33.6.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.33.6.0"
+            }
+        ], 
+        "ipv6": [
+            {
+                "address": "fe80::eeb1:d7ff:fe74:a0dc", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "lacp_rate": "fast", 
+        "macaddress": "ec:b1:d7:74:a0:dc", 
+        "miimon": "100", 
+        "mode": "802.3ad", 
+        "mtu": 1500, 
+        "promisc": false, 
+        "slaves": [
+            "eno1", 
+            "eno2"
+        ], 
+        "speed": 2000, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "bonding"
+    }, 
+    "ansible_bond0_1": {
+        "ipv4_secondaries": [
+            {
+                "address": "10.33.6.23", 
+                "broadcast": "10.33.6.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.33.6.0"
+            }
+        ]
+    }, 
+    "ansible_bond0_2": {
+        "ipv4_secondaries": [
+            {
+                "address": "10.33.6.15", 
+                "broadcast": "10.33.6.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.33.6.0"
+            }
+        ]
+    }, 
+    "ansible_bond1": {
+        "active": true, 
+        "device": "bond1", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "off [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [requested on]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "10.2.0.50", 
+            "broadcast": "10.2.0.55", 
+            "netmask": "255.255.255.248", 
+            "network": "10.2.0.48"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::eeb1:d7ff:fe74:a0de", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "lacp_rate": "fast", 
+        "macaddress": "ec:b1:d7:74:a0:de", 
+        "miimon": "100", 
+        "mode": "802.3ad", 
+        "mtu": 9000, 
+        "promisc": false, 
+        "slaves": [
+            "eno3", 
+            "eno4"
+        ], 
+        "speed": 2000, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "bonding"
+    }, 
+    "ansible_bond1_1": {
+        "ipv4": {
+            "address": "169.254.2.209", 
+            "broadcast": "169.254.255.255", 
+            "netmask": "255.255.0.0", 
+            "network": "169.254.0.0"
+        }
+    }, 
+    "ansible_bond2": {
+        "active": true, 
+        "device": "bond2", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "off [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [requested on]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "10.19.63.26", 
+            "broadcast": "10.19.63.255", 
+            "netmask": "255.255.255.0", 
+            "network": "10.19.63.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::1602:ecff:fe44:2eb8", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "lacp_rate": "fast", 
+        "macaddress": "14:02:ec:44:2e:b8", 
+        "miimon": "100", 
+        "mode": "802.3ad", 
+        "mtu": 1500, 
+        "promisc": false, 
+        "slaves": [
+            "eno49", 
+            "eno50"
+        ], 
+        "speed": 20000, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "bonding"
+    }, 
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-3.10.0-1127.10.1.el7.x86_64", 
+        "LANG": "en_US.UTF-8", 
+        "quiet": true, 
+        "rd.lvm.lv": "system/usr", 
+        "rhgb": true, 
+        "ro": true, 
+        "root": "/dev/mapper/system-root", 
+        "transparent_hugepage": "never"
+    }, 
+    "ansible_date_time": {
+        "date": "2020-11-03", 
+        "day": "03", 
+        "epoch": "1604408191", 
+        "hour": "09", 
+        "iso8601": "2020-11-03T12:56:31Z", 
+        "iso8601_basic": "20201103T095631982088", 
+        "iso8601_basic_short": "20201103T095631", 
+        "iso8601_micro": "2020-11-03T12:56:31.982088Z", 
+        "minute": "56", 
+        "month": "11", 
+        "second": "31", 
+        "time": "09:56:31", 
+        "tz": "-03", 
+        "tz_offset": "-0300", 
+        "weekday": "Tuesday", 
+        "weekday_number": "2", 
+        "weeknumber": "44", 
+        "year": "2020"
+    }, 
+    "ansible_default_ipv4": {
+        "address": "10.33.6.26", 
+        "alias": "bond0", 
+        "broadcast": "10.33.6.255", 
+        "gateway": "10.33.6.1", 
+        "interface": "bond0", 
+        "macaddress": "ec:b1:d7:74:a0:dc", 
+        "mtu": 1500, 
+        "netmask": "255.255.255.0", 
+        "network": "10.33.6.0", 
+        "type": "bonding"
+    }, 
+    "ansible_default_ipv6": {}, 
+    "ansible_device_links": {
+        "ids": {
+            "dm-0": [
+                "dm-name-system-root", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflVTPlBhNfu19pQmLRWT6WClTkvjjdabMW"
+            ], 
+            "dm-1": [
+                "dm-name-system-swap", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflfjLH0b3btCdXQ8TBiMY4hY7YFQ6j20MX"
+            ], 
+            "dm-10": [
+                "dm-name-mpatha1", 
+                "dm-uuid-part1-mpath-36006016005e04100348467596ef597c6"
+            ], 
+            "dm-11": [
+                "dm-name-mpathf", 
+                "dm-uuid-mpath-36006016005e04100690e9359dc39c776"
+            ], 
+            "dm-12": [
+                "dm-name-mpathb1", 
+                "dm-uuid-part1-mpath-36006016005e0410036846759b6a36374"
+            ], 
+            "dm-13": [
+                "dm-name-mpathm1", 
+                "dm-uuid-part1-mpath-3600601600d904100e946de5a241c520f"
+            ], 
+            "dm-14": [
+                "dm-name-mpathg", 
+                "dm-uuid-mpath-36006016005e041006b0e935965ce876d"
+            ], 
+            "dm-15": [
+                "dm-name-mpathl1", 
+                "dm-uuid-part1-mpath-3600601600d904100ea46de5a5461f08c"
+            ], 
+            "dm-16": [
+                "dm-name-mpathd1", 
+                "dm-uuid-part1-mpath-36006016005e041003a8467598c47a955"
+            ], 
+            "dm-17": [
+                "dm-name-mpathc1", 
+                "dm-uuid-part1-mpath-36006016005e0410038846759760d6cbd"
+            ], 
+            "dm-18": [
+                "dm-name-mpathh", 
+                "dm-uuid-mpath-36006016005e041006c0e9359ad4021e8"
+            ], 
+            "dm-19": [
+                "dm-name-mpathj", 
+                "dm-uuid-mpath-3600601600d90410004d1f05984b1d0ce"
+            ], 
+            "dm-2": [
+                "dm-name-system-usr", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflfS4OJ25i7m1iN1SuTy2nENRVQZzhJ5le"
+            ], 
+            "dm-20": [
+                "dm-name-mpathe1", 
+                "dm-uuid-part1-mpath-36006016005e041003c8467596d11d58f"
+            ], 
+            "dm-21": [
+                "dm-name-mpathk", 
+                "dm-uuid-mpath-3600601600d904100e746de5a1a402571"
+            ], 
+            "dm-22": [
+                "dm-name-mpathf1", 
+                "dm-uuid-part1-mpath-36006016005e04100690e9359dc39c776"
+            ], 
+            "dm-23": [
+                "dm-name-mpathg1", 
+                "dm-uuid-part1-mpath-36006016005e041006b0e935965ce876d"
+            ], 
+            "dm-24": [
+                "dm-name-mpathh1", 
+                "dm-uuid-part1-mpath-36006016005e041006c0e9359ad4021e8"
+            ], 
+            "dm-25": [
+                "dm-name-mpathj1", 
+                "dm-uuid-part1-mpath-3600601600d90410004d1f05984b1d0ce"
+            ], 
+            "dm-26": [
+                "dm-name-mpathk1", 
+                "dm-uuid-part1-mpath-3600601600d904100e746de5a1a402571"
+            ], 
+            "dm-27": [
+                "dm-name-system-var", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflM7ePgnLgcy6WpeDOX9CRSug4bLVwTEJy"
+            ], 
+            "dm-28": [
+                "dm-name-system-u02", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflxhos713spI12XIMcRSZ9iy8f8C4NaloZ"
+            ], 
+            "dm-29": [
+                "dm-name-system-u01", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflsGDCgn3uIbvnMo4LSedAuOSUEwpkiP22"
+            ], 
+            "dm-3": [
+                "dm-name-mpatha", 
+                "dm-uuid-mpath-36006016005e04100348467596ef597c6"
+            ], 
+            "dm-30": [
+                "dm-name-system-tmp", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflS4AtXEfOQWDu0Wk2AO73XU1Vxjg6BHaU"
+            ], 
+            "dm-31": [
+                "dm-name-system-home", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflLOoswZ5QQx2pQQN6orojJRS8WxEcQf3t"
+            ], 
+            "dm-32": [
+                "dm-name-system-stage", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflcSElwTXc13JmqtMUKlAOO4P7Rg1dwpAq"
+            ], 
+            "dm-33": [
+                "dm-name-system-bkporacle", 
+                "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflLCZqlScKXYlQWwhMsPULcc9MuEcgqlMG"
+            ], 
+            "dm-4": [
+                "dm-name-mpathb", 
+                "dm-uuid-mpath-36006016005e0410036846759b6a36374"
+            ], 
+            "dm-5": [
+                "dm-name-mpathm", 
+                "dm-uuid-mpath-3600601600d904100e946de5a241c520f"
+            ], 
+            "dm-6": [
+                "dm-name-mpathl", 
+                "dm-uuid-mpath-3600601600d904100ea46de5a5461f08c"
+            ], 
+            "dm-7": [
+                "dm-name-mpathc", 
+                "dm-uuid-mpath-36006016005e0410038846759760d6cbd"
+            ], 
+            "dm-8": [
+                "dm-name-mpathd", 
+                "dm-uuid-mpath-36006016005e041003a8467598c47a955"
+            ], 
+            "dm-9": [
+                "dm-name-mpathe", 
+                "dm-uuid-mpath-36006016005e041003c8467596d11d58f"
+            ], 
+            "sda": [
+                "scsi-3600508b1001c2b6ec62ecae8fc67b6e0", 
+                "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0"
+            ], 
+            "sda1": [
+                "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part1", 
+                "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part1"
+            ], 
+            "sda2": [
+                "lvm-pv-uuid-BntDiu-nfQ0-50fp-GRcC-MuuU-S9Yv-iQ0arS", 
+                "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part2", 
+                "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part2"
+            ], 
+            "sda3": [
+                "lvm-pv-uuid-xAHHDF-kqfG-yLIL-lN3J-E3SH-PuXU-3BfwLK", 
+                "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part3", 
+                "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part3"
+            ], 
+            "sdac": [
+                "scsi-3600601600d904100ea46de5a5461f08c", 
+                "wwn-0x600601600d904100ea46de5a5461f08c"
+            ], 
+            "sdau": [
+                "scsi-36006016005e0410036846759b6a36374", 
+                "wwn-0x6006016005e0410036846759b6a36374"
+            ], 
+            "sdbh": [
+                "scsi-36006016005e041003c8467596d11d58f", 
+                "wwn-0x6006016005e041003c8467596d11d58f"
+            ], 
+            "sdbq": [
+                "scsi-3600601600d90410004d1f05984b1d0ce", 
+                "wwn-0x600601600d90410004d1f05984b1d0ce"
+            ], 
+            "sdbx": [
+                "scsi-36006016005e04100690e9359dc39c776", 
+                "wwn-0x6006016005e04100690e9359dc39c776"
+            ], 
+            "sdca": [
+                "scsi-36006016005e041006b0e935965ce876d", 
+                "wwn-0x6006016005e041006b0e935965ce876d"
+            ], 
+            "sdcc": [
+                "scsi-36006016005e041006c0e9359ad4021e8", 
+                "wwn-0x6006016005e041006c0e9359ad4021e8"
+            ], 
+            "sdcr": [
+                "scsi-3600601600d904100e946de5a241c520f", 
+                "wwn-0x600601600d904100e946de5a241c520f"
+            ], 
+            "sdd": [
+                "scsi-36006016005e0410038846759760d6cbd", 
+                "wwn-0x6006016005e0410038846759760d6cbd"
+            ], 
+            "sdn": [
+                "scsi-36006016005e04100348467596ef597c6", 
+                "wwn-0x6006016005e04100348467596ef597c6"
+            ], 
+            "sdq": [
+                "scsi-36006016005e041003a8467598c47a955", 
+                "wwn-0x6006016005e041003a8467598c47a955"
+            ], 
+            "sdv": [
+                "scsi-3600601600d904100e746de5a1a402571", 
+                "wwn-0x600601600d904100e746de5a1a402571"
+            ]
+        }, 
+        "labels": {
+            "dm-0": [
+                "root"
+            ], 
+            "dm-1": [
+                "swap"
+            ], 
+            "dm-10": [
+                "DG_FRA"
+            ], 
+            "dm-12": [
+                "DG_DATA01"
+            ], 
+            "dm-13": [
+                "DG_DATA08"
+            ], 
+            "dm-15": [
+                "DG_DATA07"
+            ], 
+            "dm-16": [
+                "DG_DATA03"
+            ], 
+            "dm-17": [
+                "DG_DATA02"
+            ], 
+            "dm-2": [
+                "usr"
+            ], 
+            "dm-20": [
+                "DG_DATA04"
+            ], 
+            "dm-22": [
+                "DG_OCR01"
+            ], 
+            "dm-23": [
+                "DG_OCR02"
+            ], 
+            "dm-24": [
+                "DG_OCR03"
+            ], 
+            "dm-25": [
+                "DG_DATA05"
+            ], 
+            "dm-26": [
+                "DG_DATA06"
+            ], 
+            "dm-27": [
+                "var"
+            ], 
+            "dm-28": [
+                "u02"
+            ], 
+            "dm-29": [
+                "u01"
+            ], 
+            "dm-30": [
+                "tmp"
+            ], 
+            "dm-31": [
+                "home"
+            ], 
+            "sda1": [
+                "boot"
+            ]
+        }, 
+        "masters": {
+            "dm-11": [
+                "dm-22"
+            ], 
+            "dm-14": [
+                "dm-23"
+            ], 
+            "dm-18": [
+                "dm-24"
+            ], 
+            "dm-19": [
+                "dm-25"
+            ], 
+            "dm-21": [
+                "dm-26"
+            ], 
+            "dm-3": [
+                "dm-10"
+            ], 
+            "dm-4": [
+                "dm-12"
+            ], 
+            "dm-5": [
+                "dm-13"
+            ], 
+            "dm-6": [
+                "dm-15"
+            ], 
+            "dm-7": [
+                "dm-17"
+            ], 
+            "dm-8": [
+                "dm-16"
+            ], 
+            "dm-9": [
+                "dm-20"
+            ], 
+            "sda2": [
+                "dm-0", 
+                "dm-1", 
+                "dm-2", 
+                "dm-27", 
+                "dm-28", 
+                "dm-29", 
+                "dm-30", 
+                "dm-31"
+            ], 
+            "sda3": [
+                "dm-32", 
+                "dm-33"
+            ], 
+            "sdaa": [
+                "dm-5"
+            ], 
+            "sdab": [
+                "dm-9"
+            ], 
+            "sdac": [
+                "dm-6"
+            ], 
+            "sdad": [
+                "dm-6"
+            ], 
+            "sdae": [
+                "dm-11"
+            ], 
+            "sdaf": [
+                "dm-3"
+            ], 
+            "sdag": [
+                "dm-14"
+            ], 
+            "sdah": [
+                "dm-4"
+            ], 
+            "sdai": [
+                "dm-18"
+            ], 
+            "sdaj": [
+                "dm-7"
+            ], 
+            "sdak": [
+                "dm-19"
+            ], 
+            "sdal": [
+                "dm-21"
+            ], 
+            "sdam": [
+                "dm-8"
+            ], 
+            "sdan": [
+                "dm-5"
+            ], 
+            "sdao": [
+                "dm-9"
+            ], 
+            "sdap": [
+                "dm-6"
+            ], 
+            "sdaq": [
+                "dm-11"
+            ], 
+            "sdar": [
+                "dm-3"
+            ], 
+            "sdas": [
+                "dm-14"
+            ], 
+            "sdat": [
+                "dm-3"
+            ], 
+            "sdau": [
+                "dm-4"
+            ], 
+            "sdav": [
+                "dm-4"
+            ], 
+            "sdaw": [
+                "dm-18"
+            ], 
+            "sdax": [
+                "dm-3"
+            ], 
+            "sday": [
+                "dm-7"
+            ], 
+            "sdaz": [
+                "dm-7"
+            ], 
+            "sdb": [
+                "dm-3"
+            ], 
+            "sdba": [
+                "dm-4"
+            ], 
+            "sdbb": [
+                "dm-8"
+            ], 
+            "sdbc": [
+                "dm-8"
+            ], 
+            "sdbd": [
+                "dm-7"
+            ], 
+            "sdbe": [
+                "dm-9"
+            ], 
+            "sdbf": [
+                "dm-8"
+            ], 
+            "sdbg": [
+                "dm-11"
+            ], 
+            "sdbh": [
+                "dm-9"
+            ], 
+            "sdbi": [
+                "dm-14"
+            ], 
+            "sdbj": [
+                "dm-11"
+            ], 
+            "sdbk": [
+                "dm-18"
+            ], 
+            "sdbl": [
+                "dm-14"
+            ], 
+            "sdbm": [
+                "dm-18"
+            ], 
+            "sdbn": [
+                "dm-19"
+            ], 
+            "sdbo": [
+                "dm-19"
+            ], 
+            "sdbp": [
+                "dm-21"
+            ], 
+            "sdbq": [
+                "dm-19"
+            ], 
+            "sdbr": [
+                "dm-21"
+            ], 
+            "sdbs": [
+                "dm-9"
+            ], 
+            "sdbt": [
+                "dm-5"
+            ], 
+            "sdbu": [
+                "dm-5"
+            ], 
+            "sdbv": [
+                "dm-21"
+            ], 
+            "sdbw": [
+                "dm-6"
+            ], 
+            "sdbx": [
+                "dm-11"
+            ], 
+            "sdby": [
+                "dm-6"
+            ], 
+            "sdbz": [
+                "dm-5"
+            ], 
+            "sdc": [
+                "dm-4"
+            ], 
+            "sdca": [
+                "dm-14"
+            ], 
+            "sdcb": [
+                "dm-6"
+            ], 
+            "sdcc": [
+                "dm-18"
+            ], 
+            "sdcd": [
+                "dm-19"
+            ], 
+            "sdce": [
+                "dm-21"
+            ], 
+            "sdcf": [
+                "dm-5"
+            ], 
+            "sdcg": [
+                "dm-6"
+            ], 
+            "sdch": [
+                "dm-3"
+            ], 
+            "sdci": [
+                "dm-4"
+            ], 
+            "sdcj": [
+                "dm-7"
+            ], 
+            "sdck": [
+                "dm-8"
+            ], 
+            "sdcl": [
+                "dm-9"
+            ], 
+            "sdcm": [
+                "dm-11"
+            ], 
+            "sdcn": [
+                "dm-14"
+            ], 
+            "sdco": [
+                "dm-18"
+            ], 
+            "sdcp": [
+                "dm-19"
+            ], 
+            "sdcq": [
+                "dm-21"
+            ], 
+            "sdcr": [
+                "dm-5"
+            ], 
+            "sdcs": [
+                "dm-6"
+            ], 
+            "sdd": [
+                "dm-7"
+            ], 
+            "sde": [
+                "dm-8"
+            ], 
+            "sdf": [
+                "dm-9"
+            ], 
+            "sdg": [
+                "dm-11"
+            ], 
+            "sdh": [
+                "dm-14"
+            ], 
+            "sdi": [
+                "dm-3"
+            ], 
+            "sdj": [
+                "dm-18"
+            ], 
+            "sdk": [
+                "dm-4"
+            ], 
+            "sdl": [
+                "dm-19"
+            ], 
+            "sdm": [
+                "dm-7"
+            ], 
+            "sdn": [
+                "dm-3"
+            ], 
+            "sdo": [
+                "dm-4"
+            ], 
+            "sdp": [
+                "dm-7"
+            ], 
+            "sdq": [
+                "dm-8"
+            ], 
+            "sdr": [
+                "dm-9"
+            ], 
+            "sds": [
+                "dm-11"
+            ], 
+            "sdt": [
+                "dm-14"
+            ], 
+            "sdu": [
+                "dm-18"
+            ], 
+            "sdv": [
+                "dm-21"
+            ], 
+            "sdw": [
+                "dm-19"
+            ], 
+            "sdx": [
+                "dm-8"
+            ], 
+            "sdy": [
+                "dm-21"
+            ], 
+            "sdz": [
+                "dm-5"
+            ]
+        }, 
+        "uuids": {
+            "dm-0": [
+                "564e83c9-1d08-4b42-abee-1734947ae510"
+            ], 
+            "dm-1": [
+                "8ab21d91-e5a1-46ce-b630-a992690c532c"
+            ], 
+            "dm-2": [
+                "ecd920cd-fb36-4f0a-a698-ff3d1e271109"
+            ], 
+            "dm-27": [
+                "3b62b2e7-47ec-49a2-ae58-1f6ca118f120"
+            ], 
+            "dm-28": [
+                "06358424-fa0a-4270-ac6d-c2c9bfaf4548"
+            ], 
+            "dm-29": [
+                "0e8dc48e-9e20-4909-9d7f-74014c50e793"
+            ], 
+            "dm-30": [
+                "8b2e6d02-bafc-454e-bb1e-9a14612d320b"
+            ], 
+            "dm-31": [
+                "d071ccfb-1e1e-469f-8d00-77de2788d632"
+            ], 
+            "dm-32": [
+                "f6a249e0-dbc3-4219-8b81-364aa1b83e8d"
+            ], 
+            "dm-33": [
+                "2c315fb8-73c0-4d17-af97-3a0c5c218de7"
+            ], 
+            "sda1": [
+                "3fc5cc89-3cd7-4788-9ee8-698ec70957d8"
+            ]
+        }
+    }, 
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-root", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflVTPlBhNfu19pQmLRWT6WClTkvjjdabMW"
+                ], 
+                "labels": [
+                    "root"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "564e83c9-1d08-4b42-abee-1734947ae510"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "31457280", 
+            "sectorsize": "512", 
+            "size": "15.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-1": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-swap", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflfjLH0b3btCdXQ8TBiMY4hY7YFQ6j20MX"
+                ], 
+                "labels": [
+                    "swap"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "8ab21d91-e5a1-46ce-b630-a992690c532c"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "33554432", 
+            "sectorsize": "512", 
+            "size": "16.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-10": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpatha1", 
+                    "dm-uuid-part1-mpath-36006016005e04100348467596ef597c6"
+                ], 
+                "labels": [
+                    "DG_FRA"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "358547457", 
+            "sectorsize": "512", 
+            "size": "170.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-11": {
+            "holders": [
+                "mpathf1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathf", 
+                    "dm-uuid-mpath-36006016005e04100690e9359dc39c776"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-22"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-12": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathb1", 
+                    "dm-uuid-part1-mpath-36006016005e0410036846759b6a36374"
+                ], 
+                "labels": [
+                    "DG_DATA01"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "358547457", 
+            "sectorsize": "512", 
+            "size": "170.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-13": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathm1", 
+                    "dm-uuid-part1-mpath-3600601600d904100e946de5a241c520f"
+                ], 
+                "labels": [
+                    "DG_DATA08"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "356506288", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-14": {
+            "holders": [
+                "mpathg1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathg", 
+                    "dm-uuid-mpath-36006016005e041006b0e935965ce876d"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-23"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-15": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathl1", 
+                    "dm-uuid-part1-mpath-3600601600d904100ea46de5a5461f08c"
+                ], 
+                "labels": [
+                    "DG_DATA07"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "356506288", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-16": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathd1", 
+                    "dm-uuid-part1-mpath-36006016005e041003a8467598c47a955"
+                ], 
+                "labels": [
+                    "DG_DATA03"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "358547457", 
+            "sectorsize": "512", 
+            "size": "170.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-17": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathc1", 
+                    "dm-uuid-part1-mpath-36006016005e0410038846759760d6cbd"
+                ], 
+                "labels": [
+                    "DG_DATA02"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "358547457", 
+            "sectorsize": "512", 
+            "size": "170.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-18": {
+            "holders": [
+                "mpathh1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathh", 
+                    "dm-uuid-mpath-36006016005e041006c0e9359ad4021e8"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-24"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-19": {
+            "holders": [
+                "mpathj1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathj", 
+                    "dm-uuid-mpath-3600601600d90410004d1f05984b1d0ce"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-25"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-2": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-usr", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflfS4OJ25i7m1iN1SuTy2nENRVQZzhJ5le"
+                ], 
+                "labels": [
+                    "usr"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "ecd920cd-fb36-4f0a-a698-ff3d1e271109"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "20971520", 
+            "sectorsize": "512", 
+            "size": "10.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-20": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathe1", 
+                    "dm-uuid-part1-mpath-36006016005e041003c8467596d11d58f"
+                ], 
+                "labels": [
+                    "DG_DATA04"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "358547457", 
+            "sectorsize": "512", 
+            "size": "170.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-21": {
+            "holders": [
+                "mpathk1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathk", 
+                    "dm-uuid-mpath-3600601600d904100e746de5a1a402571"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-26"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-22": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathf1", 
+                    "dm-uuid-part1-mpath-36006016005e04100690e9359dc39c776"
+                ], 
+                "labels": [
+                    "DG_OCR01"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "2031617", 
+            "sectorsize": "512", 
+            "size": "992.00 MB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-23": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathg1", 
+                    "dm-uuid-part1-mpath-36006016005e041006b0e935965ce876d"
+                ], 
+                "labels": [
+                    "DG_OCR02"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "2031617", 
+            "sectorsize": "512", 
+            "size": "992.00 MB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-24": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathh1", 
+                    "dm-uuid-part1-mpath-36006016005e041006c0e9359ad4021e8"
+                ], 
+                "labels": [
+                    "DG_OCR03"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "2031617", 
+            "sectorsize": "512", 
+            "size": "992.00 MB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-25": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathj1", 
+                    "dm-uuid-part1-mpath-3600601600d90410004d1f05984b1d0ce"
+                ], 
+                "labels": [
+                    "DG_DATA05"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "209649665", 
+            "sectorsize": "512", 
+            "size": "99.97 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-26": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathk1", 
+                    "dm-uuid-part1-mpath-3600601600d904100e746de5a1a402571"
+                ], 
+                "labels": [
+                    "DG_DATA06"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "356506288", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-27": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-var", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflM7ePgnLgcy6WpeDOX9CRSug4bLVwTEJy"
+                ], 
+                "labels": [
+                    "var"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "3b62b2e7-47ec-49a2-ae58-1f6ca118f120"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "20971520", 
+            "sectorsize": "512", 
+            "size": "10.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-28": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-u02", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflxhos713spI12XIMcRSZ9iy8f8C4NaloZ"
+                ], 
+                "labels": [
+                    "u02"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "06358424-fa0a-4270-ac6d-c2c9bfaf4548"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "125829120", 
+            "sectorsize": "512", 
+            "size": "60.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-29": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-u01", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflsGDCgn3uIbvnMo4LSedAuOSUEwpkiP22"
+                ], 
+                "labels": [
+                    "u01"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "0e8dc48e-9e20-4909-9d7f-74014c50e793"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "125829120", 
+            "sectorsize": "512", 
+            "size": "60.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-3": {
+            "holders": [
+                "mpatha1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpatha", 
+                    "dm-uuid-mpath-36006016005e04100348467596ef597c6"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-10"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-30": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-tmp", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflS4AtXEfOQWDu0Wk2AO73XU1Vxjg6BHaU"
+                ], 
+                "labels": [
+                    "tmp"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "8b2e6d02-bafc-454e-bb1e-9a14612d320b"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "16777216", 
+            "sectorsize": "512", 
+            "size": "8.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-31": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-home", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflLOoswZ5QQx2pQQN6orojJRS8WxEcQf3t"
+                ], 
+                "labels": [
+                    "home"
+                ], 
+                "masters": [], 
+                "uuids": [
+                    "d071ccfb-1e1e-469f-8d00-77de2788d632"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "31457280", 
+            "sectorsize": "512", 
+            "size": "15.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-32": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-stage", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflcSElwTXc13JmqtMUKlAOO4P7Rg1dwpAq"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "f6a249e0-dbc3-4219-8b81-364aa1b83e8d"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "52428800", 
+            "sectorsize": "512", 
+            "size": "25.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-33": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-system-bkporacle", 
+                    "dm-uuid-LVM-avtNClUPs5KJo3PQBNtbtItwAnXejmflLCZqlScKXYlQWwhMsPULcc9MuEcgqlMG"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "2c315fb8-73c0-4d17-af97-3a0c5c218de7"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "377487360", 
+            "sectorsize": "512", 
+            "size": "180.00 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-4": {
+            "holders": [
+                "mpathb1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathb", 
+                    "dm-uuid-mpath-36006016005e0410036846759b6a36374"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-12"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-5": {
+            "holders": [
+                "mpathm1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathm", 
+                    "dm-uuid-mpath-3600601600d904100e946de5a241c520f"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-13"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-6": {
+            "holders": [
+                "mpathl1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathl", 
+                    "dm-uuid-mpath-3600601600d904100ea46de5a5461f08c"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-15"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-7": {
+            "holders": [
+                "mpathc1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathc", 
+                    "dm-uuid-mpath-36006016005e0410038846759760d6cbd"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-17"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-8": {
+            "holders": [
+                "mpathd1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathd", 
+                    "dm-uuid-mpath-36006016005e041003a8467598c47a955"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-16"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-9": {
+            "holders": [
+                "mpathe1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathe", 
+                    "dm-uuid-mpath-36006016005e041003c8467596d11d58f"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-20"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "sda": {
+            "holders": [], 
+            "host": "RAID bus controller: Hewlett-Packard Company Smart Array Gen9 Controllers (rev 01)", 
+            "links": {
+                "ids": [
+                    "scsi-3600508b1001c2b6ec62ecae8fc67b6e0", 
+                    "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LOGICAL VOLUME", 
+            "partitions": {
+                "sda1": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [
+                            "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part1", 
+                            "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part1"
+                        ], 
+                        "labels": [
+                            "boot"
+                        ], 
+                        "masters": [], 
+                        "uuids": [
+                            "3fc5cc89-3cd7-4788-9ee8-698ec70957d8"
+                        ]
+                    }, 
+                    "sectors": "1048576", 
+                    "sectorsize": 512, 
+                    "size": "512.00 MB", 
+                    "start": "2048", 
+                    "uuid": "3fc5cc89-3cd7-4788-9ee8-698ec70957d8"
+                }, 
+                "sda2": {
+                    "holders": [
+                        "system-root", 
+                        "system-swap", 
+                        "system-usr", 
+                        "system-var", 
+                        "system-u02", 
+                        "system-u01", 
+                        "system-tmp", 
+                        "system-home"
+                    ], 
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-BntDiu-nfQ0-50fp-GRcC-MuuU-S9Yv-iQ0arS", 
+                            "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part2", 
+                            "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part2"
+                        ], 
+                        "labels": [], 
+                        "masters": [
+                            "dm-0", 
+                            "dm-1", 
+                            "dm-2", 
+                            "dm-27", 
+                            "dm-28", 
+                            "dm-29", 
+                            "dm-30", 
+                            "dm-31"
+                        ], 
+                        "uuids": []
+                    }, 
+                    "sectors": "406855680", 
+                    "sectorsize": 512, 
+                    "size": "194.00 GB", 
+                    "start": "1050624", 
+                    "uuid": null
+                }, 
+                "sda3": {
+                    "holders": [
+                        "system-stage", 
+                        "system-bkporacle"
+                    ], 
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-xAHHDF-kqfG-yLIL-lN3J-E3SH-PuXU-3BfwLK", 
+                            "scsi-3600508b1001c2b6ec62ecae8fc67b6e0-part3", 
+                            "wwn-0x600508b1001c2b6ec62ecae8fc67b6e0-part3"
+                        ], 
+                        "labels": [], 
+                        "masters": [
+                            "dm-32", 
+                            "dm-33"
+                        ], 
+                        "uuids": []
+                    }, 
+                    "sectors": "764151728", 
+                    "sectorsize": 512, 
+                    "size": "364.38 GB", 
+                    "start": "407906304", 
+                    "uuid": null
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "1172058032", 
+            "sectorsize": "512", 
+            "size": "558.88 GB", 
+            "support_discard": "0", 
+            "vendor": "HP", 
+            "virtual": 1, 
+            "wwn": "0x600508b1001c2b6ec62ecae8fc67b6e0"
+        }, 
+        "sdaa": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdab": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdac": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d904100ea46de5a5461f08c", 
+                    "wwn-0x600601600d904100ea46de5a5461f08c"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d904100ea46de5a5461f08c"
+        }, 
+        "sdad": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdae": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaf": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdag": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdah": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdai": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaj": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdak": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdal": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdam": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdan": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdao": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdap": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaq": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdar": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdas": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdat": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdau": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e0410036846759b6a36374", 
+                    "wwn-0x6006016005e0410036846759b6a36374"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e0410036846759b6a36374"
+        }, 
+        "sdav": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaw": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdax": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sday": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaz": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdb": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdba": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbb": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbc": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbd": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbe": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbf": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbg": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbh": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e041003c8467596d11d58f", 
+                    "wwn-0x6006016005e041003c8467596d11d58f"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e041003c8467596d11d58f"
+        }, 
+        "sdbi": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbj": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbk": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbl": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbm": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbn": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbo": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbp": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbq": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d90410004d1f05984b1d0ce", 
+                    "wwn-0x600601600d90410004d1f05984b1d0ce"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d90410004d1f05984b1d0ce"
+        }, 
+        "sdbr": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbs": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbt": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbu": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbv": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbw": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbx": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e04100690e9359dc39c776", 
+                    "wwn-0x6006016005e04100690e9359dc39c776"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e04100690e9359dc39c776"
+        }, 
+        "sdby": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbz": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdc": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdca": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e041006b0e935965ce876d", 
+                    "wwn-0x6006016005e041006b0e935965ce876d"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e041006b0e935965ce876d"
+        }, 
+        "sdcb": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcc": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e041006c0e9359ad4021e8", 
+                    "wwn-0x6006016005e041006c0e9359ad4021e8"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e041006c0e9359ad4021e8"
+        }, 
+        "sdcd": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdce": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcf": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcg": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdch": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdci": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcj": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdck": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcl": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcm": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcn": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdco": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcp": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcq": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdcr": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d904100e946de5a241c520f", 
+                    "wwn-0x600601600d904100e946de5a241c520f"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d904100e946de5a241c520f"
+        }, 
+        "sdcs": {
+            "holders": [
+                "mpathl"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdd": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e0410038846759760d6cbd", 
+                    "wwn-0x6006016005e0410038846759760d6cbd"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e0410038846759760d6cbd"
+        }, 
+        "sde": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdf": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdg": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdh": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdi": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdj": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdk": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdl": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdm": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdn": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e04100348467596ef597c6", 
+                    "wwn-0x6006016005e04100348467596ef597c6"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e04100348467596ef597c6"
+        }, 
+        "sdo": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdp": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdq": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e041003a8467598c47a955", 
+                    "wwn-0x6006016005e041003a8467598c47a955"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e041003a8467598c47a955"
+        }, 
+        "sdr": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sds": {
+            "holders": [
+                "mpathf"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdt": {
+            "holders": [
+                "mpathg"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-14"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdu": {
+            "holders": [
+                "mpathh"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-18"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "2097152", 
+            "sectorsize": "512", 
+            "size": "1.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdv": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d904100e746de5a1a402571", 
+                    "wwn-0x600601600d904100e746de5a1a402571"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d904100e746de5a1a402571"
+        }, 
+        "sdw": {
+            "holders": [
+                "mpathj"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-19"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "209715200", 
+            "sectorsize": "512", 
+            "size": "100.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdx": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "358612992", 
+            "sectorsize": "512", 
+            "size": "171.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdy": {
+            "holders": [
+                "mpathk"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-21"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdz": {
+            "holders": [
+                "mpathm"
+            ], 
+            "host": "Fibre Channel: QLogic Corp. ISP2532-based 8Gb Fibre Channel to PCI Express HBA (rev 02)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "356515840", 
+            "sectorsize": "512", 
+            "size": "170.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }
+    }, 
+    "ansible_distribution": "RedHat", 
+    "ansible_distribution_file_parsed": true, 
+    "ansible_distribution_file_path": "/etc/redhat-release", 
+    "ansible_distribution_file_search_string": "Red Hat", 
+    "ansible_distribution_file_variety": "RedHat", 
+    "ansible_distribution_major_version": "7", 
+    "ansible_distribution_release": "Maipo", 
+    "ansible_distribution_version": "7.8", 
+    "ansible_dns": {
+        "nameservers": [
+            "127.0.0.1", 
+            "10.33.91.32", 
+            "10.33.91.33"
+        ], 
+        "options": {
+            "timeout": "1"
+        }, 
+        "search": [
+            "ed.locaweb.com.br", 
+            "locaweb.com.br", 
+            "lwo.locaweb.com.br"
+        ]
+    }, 
+    "ansible_domain": "lwo.locaweb.com.br", 
+    "ansible_effective_group_id": 0, 
+    "ansible_effective_user_id": 0, 
+    "ansible_eno1": {
+        "active": true, 
+        "device": "eno1", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "ec:b1:d7:74:a0:dc", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.0", 
+        "perm_macaddress": "ec:b1:d7:74:a0:dc", 
+        "phc_index": 0, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno2": {
+        "active": true, 
+        "device": "eno2", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "ec:b1:d7:74:a0:dc", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.1", 
+        "perm_macaddress": "ec:b1:d7:74:a0:dd", 
+        "phc_index": 1, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno3": {
+        "active": true, 
+        "device": "eno3", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "ec:b1:d7:74:a0:de", 
+        "module": "tg3", 
+        "mtu": 9000, 
+        "pciid": "0000:02:00.2", 
+        "perm_macaddress": "ec:b1:d7:74:a0:de", 
+        "phc_index": 2, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno4": {
+        "active": true, 
+        "device": "eno4", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "ec:b1:d7:74:a0:de", 
+        "module": "tg3", 
+        "mtu": 9000, 
+        "pciid": "0000:02:00.3", 
+        "perm_macaddress": "ec:b1:d7:74:a0:df", 
+        "phc_index": 3, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno49": {
+        "active": true, 
+        "device": "eno49", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "on", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off", 
+            "rx_udp_tunnel_port_offload": "on", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "on", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_event"
+        ], 
+        "macaddress": "14:02:ec:44:2e:b8", 
+        "module": "bnx2x", 
+        "mtu": 1500, 
+        "pciid": "0000:04:00.0", 
+        "perm_macaddress": "14:02:ec:44:2e:b8", 
+        "phc_index": 4, 
+        "promisc": false, 
+        "speed": 10000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno50": {
+        "active": true, 
+        "device": "eno50", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "on", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off", 
+            "rx_udp_tunnel_port_offload": "on", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "on", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_event"
+        ], 
+        "macaddress": "14:02:ec:44:2e:b8", 
+        "module": "bnx2x", 
+        "mtu": 1500, 
+        "pciid": "0000:04:00.1", 
+        "perm_macaddress": "14:02:ec:44:2e:bc", 
+        "phc_index": 5, 
+        "promisc": false, 
+        "speed": 10000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_env": {
+        "HOME": "/root", 
+        "LANG": "C", 
+        "LC_ALL": "C", 
+        "LC_NUMERIC": "C", 
+        "LOGNAME": "root", 
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:", 
+        "MAIL": "/var/mail/alex.oliveira", 
+        "PATH": "/sbin:/bin:/usr/sbin:/usr/bin", 
+        "PWD": "/home/alex.oliveira", 
+        "SHELL": "/bin/bash", 
+        "SHLVL": "1", 
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-figdiyaamotjbbegdswgcbinoawdkwdk ; /usr/bin/python /home/alex.oliveira/.ansible/tmp/ansible-tmp-1604408189.23-9142-232730735772515/AnsiballZ_setup.py", 
+        "SUDO_GID": "54331", 
+        "SUDO_UID": "54333", 
+        "SUDO_USER": "alex.oliveira", 
+        "TERM": "screen", 
+        "USER": "root", 
+        "USERNAME": "root", 
+        "XDG_SESSION_ID": "436144", 
+        "_": "/usr/bin/python"
+    }, 
+    "ansible_fibre_channel_wwn": [
+        "5001438028cfb994", 
+        "5001438028cfb996"
+    ], 
+    "ansible_fips": false, 
+    "ansible_form_factor": "Rack Mount Chassis", 
+    "ansible_fqdn": "gpldldora0005.lwo.locaweb.com.br", 
+    "ansible_hostname": "gpldldora0005", 
+    "ansible_hostnqn": "", 
+    "ansible_interfaces": [
+        "bond0_2", 
+        "bond0_1", 
+        "bond0", 
+        "bond1", 
+        "bond2", 
+        "lo", 
+        "bond1_1", 
+        "eno49", 
+        "eno50", 
+        "eno1", 
+        "eno2", 
+        "eno3", 
+        "eno4"
+    ], 
+    "ansible_is_chroot": false, 
+    "ansible_iscsi_iqn": "iqn.1994-05.com.redhat:1881968dcd9", 
+    "ansible_kernel": "3.10.0-1127.10.1.el7.x86_64", 
+    "ansible_kernel_version": "#1 SMP Tue May 26 15:05:43 EDT 2020", 
+    "ansible_lo": {
+        "active": true, 
+        "device": "lo", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "on [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "off [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on [fixed]", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "on [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off [fixed]", 
+            "tx_scatter_gather": "on [fixed]", 
+            "tx_scatter_gather_fraglist": "on [fixed]", 
+            "tx_sctp_segmentation": "on", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "off [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "on", 
+            "vlan_challenged": "on [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "127.0.0.1", 
+            "broadcast": "", 
+            "netmask": "255.0.0.0", 
+            "network": "127.0.0.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "::1", 
+                "prefix": "128", 
+                "scope": "host"
+            }
+        ], 
+        "mtu": 16436, 
+        "promisc": false, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "loopback"
+    }, 
+    "ansible_local": {
+        "customtelegraf": 1, 
+        "isilon": 1, 
+        "openshift": 0, 
+        "oracle": 1, 
+        "pci_wex": 0, 
+        "sap": 0, 
+        "sap_isilon": 0
+    }, 
+    "ansible_lsb": {}, 
+    "ansible_lvm": {
+        "lvs": {
+            "bkporacle": {
+                "size_g": "180.00", 
+                "vg": "system"
+            }, 
+            "home": {
+                "size_g": "15.00", 
+                "vg": "system"
+            }, 
+            "root": {
+                "size_g": "15.00", 
+                "vg": "system"
+            }, 
+            "stage": {
+                "size_g": "25.00", 
+                "vg": "system"
+            }, 
+            "swap": {
+                "size_g": "16.00", 
+                "vg": "system"
+            }, 
+            "tmp": {
+                "size_g": "8.00", 
+                "vg": "system"
+            }, 
+            "u01": {
+                "size_g": "60.00", 
+                "vg": "system"
+            }, 
+            "u02": {
+                "size_g": "60.00", 
+                "vg": "system"
+            }, 
+            "usr": {
+                "size_g": "10.00", 
+                "vg": "system"
+            }, 
+            "var": {
+                "size_g": "10.00", 
+                "vg": "system"
+            }
+        }, 
+        "pvs": {
+            "/dev/sda2": {
+                "free_g": "0", 
+                "size_g": "194.00", 
+                "vg": "system"
+            }, 
+            "/dev/sda3": {
+                "free_g": "159.37", 
+                "size_g": "364.37", 
+                "vg": "system"
+            }
+        }, 
+        "vgs": {
+            "system": {
+                "free_g": "159.37", 
+                "num_lvs": "10", 
+                "num_pvs": "2", 
+                "size_g": "558.37"
+            }
+        }
+    }, 
+    "ansible_machine": "x86_64", 
+    "ansible_machine_id": "191f3efdb78041c8934e71f96598ad53", 
+    "ansible_memfree_mb": 1223, 
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 11086, 
+            "used": 85472
+        }, 
+        "real": {
+            "free": 1223, 
+            "total": 96558, 
+            "used": 95335
+        }, 
+        "swap": {
+            "cached": 0, 
+            "free": 16383, 
+            "total": 16383, 
+            "used": 0
+        }
+    }, 
+    "ansible_memtotal_mb": 96558, 
+    "ansible_mounts": [
+        {
+            "block_available": 2085556, 
+            "block_size": 4096, 
+            "block_total": 2094080, 
+            "block_used": 8524, 
+            "device": "/dev/mapper/system-tmp", 
+            "fstype": "xfs", 
+            "inode_available": 4193121, 
+            "inode_total": 4193280, 
+            "inode_used": 159, 
+            "mount": "/tmp", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 8542437376, 
+            "size_total": 8577351680, 
+            "uuid": "8b2e6d02-bafc-454e-bb1e-9a14612d320b"
+        }, 
+        {
+            "block_available": 2214011, 
+            "block_size": 4096, 
+            "block_total": 2617856, 
+            "block_used": 403845, 
+            "device": "/dev/mapper/system-var", 
+            "fstype": "xfs", 
+            "inode_available": 5235535, 
+            "inode_total": 5240832, 
+            "inode_used": 5297, 
+            "mount": "/var", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 9068589056, 
+            "size_total": 10722738176, 
+            "uuid": "3b62b2e7-47ec-49a2-ae58-1f6ca118f120"
+        }, 
+        {
+            "block_available": 3510174, 
+            "block_size": 4096, 
+            "block_total": 3928576, 
+            "block_used": 418402, 
+            "device": "/dev/mapper/system-home", 
+            "fstype": "xfs", 
+            "inode_available": 7842767, 
+            "inode_total": 7862272, 
+            "inode_used": 19505, 
+            "mount": "/home", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 14377672704, 
+            "size_total": 16091447296, 
+            "uuid": "d071ccfb-1e1e-469f-8d00-77de2788d632"
+        }, 
+        {
+            "block_available": 78073, 
+            "block_size": 4096, 
+            "block_total": 128832, 
+            "block_used": 50759, 
+            "device": "/dev/sda1", 
+            "fstype": "xfs", 
+            "inode_available": 260778, 
+            "inode_total": 261120, 
+            "inode_used": 342, 
+            "mount": "/boot", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 319787008, 
+            "size_total": 527695872, 
+            "uuid": "3fc5cc89-3cd7-4788-9ee8-698ec70957d8"
+        }, 
+        {
+            "block_available": 2054386, 
+            "block_size": 4096, 
+            "block_total": 2617856, 
+            "block_used": 563470, 
+            "device": "/dev/mapper/system-usr", 
+            "fstype": "xfs", 
+            "inode_available": 5181950, 
+            "inode_total": 5240832, 
+            "inode_used": 58882, 
+            "mount": "/usr", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 8414765056, 
+            "size_total": 10722738176, 
+            "uuid": "ecd920cd-fb36-4f0a-a698-ff3d1e271109"
+        }, 
+        {
+            "block_available": 1435902, 
+            "block_size": 4096, 
+            "block_total": 3928576, 
+            "block_used": 2492674, 
+            "device": "/dev/mapper/system-root", 
+            "fstype": "xfs", 
+            "inode_available": 7814318, 
+            "inode_total": 7862272, 
+            "inode_used": 47954, 
+            "mount": "/", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 5881454592, 
+            "size_total": 16091447296, 
+            "uuid": "564e83c9-1d08-4b42-abee-1734947ae510"
+        }, 
+        {
+            "block_available": 3987736, 
+            "block_size": 4096, 
+            "block_total": 6549376, 
+            "block_used": 2561640, 
+            "device": "/dev/mapper/system-stage", 
+            "fstype": "xfs", 
+            "inode_available": 26205783, 
+            "inode_total": 26210304, 
+            "inode_used": 4521, 
+            "mount": "/stage", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 16333766656, 
+            "size_total": 26826244096, 
+            "uuid": "f6a249e0-dbc3-4219-8b81-364aa1b83e8d"
+        }, 
+        {
+            "block_available": 45118925, 
+            "block_size": 4096, 
+            "block_total": 47161856, 
+            "block_used": 2042931, 
+            "device": "/dev/mapper/system-bkporacle", 
+            "fstype": "xfs", 
+            "inode_available": 94363313, 
+            "inode_total": 94369792, 
+            "inode_used": 6479, 
+            "mount": "/u04", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 184807116800, 
+            "size_total": 193174962176, 
+            "uuid": "2c315fb8-73c0-4d17-af97-3a0c5c218de7"
+        }, 
+        {
+            "block_available": 6560662, 
+            "block_size": 4096, 
+            "block_total": 15719936, 
+            "block_used": 9159274, 
+            "device": "/dev/mapper/system-u01", 
+            "fstype": "xfs", 
+            "inode_available": 30693395, 
+            "inode_total": 31455232, 
+            "inode_used": 761837, 
+            "mount": "/u01", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 26872471552, 
+            "size_total": 64388857856, 
+            "uuid": "0e8dc48e-9e20-4909-9d7f-74014c50e793"
+        }, 
+        {
+            "block_available": 3355575, 
+            "block_size": 4096, 
+            "block_total": 15719936, 
+            "block_used": 12364361, 
+            "device": "/dev/mapper/system-u02", 
+            "fstype": "xfs", 
+            "inode_available": 26890723, 
+            "inode_total": 27358648, 
+            "inode_used": 467925, 
+            "mount": "/u02", 
+            "options": "rw,relatime,attr2,inode64,logbsize=256k,sunit=512,swidth=512,noquota", 
+            "size_available": 13744435200, 
+            "size_total": 64388857856, 
+            "uuid": "06358424-fa0a-4270-ac6d-c2c9bfaf4548"
+        }, 
+        {
+            "block_available": 98465645, 
+            "block_size": 32768, 
+            "block_total": 335544320, 
+            "block_used": 237078675, 
+            "device": "10.19.63.11:/PEFS-5401/", 
+            "fstype": "nfs", 
+            "inode_available": 6301801280, 
+            "inode_total": 21474836480, 
+            "inode_used": 15173035200, 
+            "mount": "/u03", 
+            "options": "rw,sync,relatime,vers=3,rsize=32768,wsize=32768,namlen=255,acregmin=0,acregmax=0,acdirmin=0,acdirmax=0,hard,noac,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.19.63.11,mountvers=3,mountport=300,mountproto=tcp,local_lock=none,addr=10.19.63.11", 
+            "size_available": 3226522255360, 
+            "size_total": 10995116277760, 
+            "uuid": "N/A"
+        }
+    ], 
+    "ansible_nodename": "gpldldora0005", 
+    "ansible_os_family": "RedHat", 
+    "ansible_pkg_mgr": "yum", 
+    "ansible_proc_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-3.10.0-1127.10.1.el7.x86_64", 
+        "LANG": "en_US.UTF-8", 
+        "quiet": true, 
+        "rd.lvm.lv": [
+            "system/root", 
+            "system/swap", 
+            "system/usr"
+        ], 
+        "rhgb": true, 
+        "ro": true, 
+        "root": "/dev/mapper/system-root", 
+        "transparent_hugepage": "never"
+    }, 
+    "ansible_processor": [
+        "0", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "1", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "2", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "3", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "4", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "5", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "6", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "7", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "8", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "9", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "10", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "11", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "12", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "13", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "14", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "15", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "16", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "17", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "18", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "19", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "20", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "21", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "22", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz", 
+        "23", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz"
+    ], 
+    "ansible_processor_cores": 12, 
+    "ansible_processor_count": 1, 
+    "ansible_processor_threads_per_core": 2, 
+    "ansible_processor_vcpus": 24, 
+    "ansible_product_name": "ProLiant DL360 Gen9", 
+    "ansible_product_serial": "BRC5256LRT", 
+    "ansible_product_uuid": "32353537-3835-5242-4335-3235364C5254", 
+    "ansible_product_version": "NA", 
+    "ansible_python": {
+        "executable": "/usr/bin/python", 
+        "has_sslcontext": true, 
+        "type": "CPython", 
+        "version": {
+            "major": 2, 
+            "micro": 5, 
+            "minor": 7, 
+            "releaselevel": "final", 
+            "serial": 0
+        }, 
+        "version_info": [
+            2, 
+            7, 
+            5, 
+            "final", 
+            0
+        ]
+    }, 
+    "ansible_python_version": "2.7.5", 
+    "ansible_real_group_id": 0, 
+    "ansible_real_user_id": 0, 
+    "ansible_selinux": {
+        "status": "disabled"
+    }, 
+    "ansible_selinux_python_present": true, 
+    "ansible_service_mgr": "systemd", 
+    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEzgZZdi6IRZhnDDQxh/ic1OrDzkApXxUI3ppcBfp7ybr5WTnEaF7zTcansYa3+EKpjKd+El4aRm+ToS9lTRgwk=", 
+    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIIdDfNHCpL47Dgfxa5adwT74aG2ZwL2Y3GfdMFS0nr4k", 
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQClc4XC4AEs+uGh1G8LJcBxRFtLWMBUsPx1Ft1vbyQ2F3PnnmZeMO48M8TOmVc3gXQcDJULjhrzo0eVsq4TLgIt/cypmXH/IrZdvLydBlpx3jzOHo8LGIpOTkHc+FWBeWVyNlQd2eUyVwrGCey0JwbJ0f0qMdohB0h6tqoeCpi6M5NoLPUXVj6HxatVukauWKxgUYcVqKqVKTTYE8aMLhwV/ZLSmaLpCrIs0tlFNj8Sc4actYg6cIaUBmzvmcTHo4UTLZcJAC7xirMyOtkGkfzQ2K3xC3tBkWu57V8UZpRw0TGtai8VB0MBPpa38qwVdoem6KHCrv6p9NKc8kHQdeKH", 
+    "ansible_swapfree_mb": 16383, 
+    "ansible_swaptotal_mb": 16383, 
+    "ansible_system": "Linux", 
+    "ansible_system_capabilities": [
+        "cap_chown", 
+        "cap_dac_override", 
+        "cap_dac_read_search", 
+        "cap_fowner", 
+        "cap_fsetid", 
+        "cap_kill", 
+        "cap_setgid", 
+        "cap_setuid", 
+        "cap_setpcap", 
+        "cap_linux_immutable", 
+        "cap_net_bind_service", 
+        "cap_net_broadcast", 
+        "cap_net_admin", 
+        "cap_net_raw", 
+        "cap_ipc_lock", 
+        "cap_ipc_owner", 
+        "cap_sys_module", 
+        "cap_sys_rawio", 
+        "cap_sys_chroot", 
+        "cap_sys_ptrace", 
+        "cap_sys_pacct", 
+        "cap_sys_admin", 
+        "cap_sys_boot", 
+        "cap_sys_nice", 
+        "cap_sys_resource", 
+        "cap_sys_time", 
+        "cap_sys_tty_config", 
+        "cap_mknod", 
+        "cap_lease", 
+        "cap_audit_write", 
+        "cap_audit_control", 
+        "cap_setfcap", 
+        "cap_mac_override", 
+        "cap_mac_admin", 
+        "cap_syslog", 
+        "35", 
+        "36+ep"
+    ], 
+    "ansible_system_capabilities_enforced": "True", 
+    "ansible_system_vendor": "HP", 
+    "ansible_uptime_seconds": 11638633, 
+    "ansible_user_dir": "/root", 
+    "ansible_user_gecos": "root", 
+    "ansible_user_gid": 0, 
+    "ansible_user_id": "root", 
+    "ansible_user_shell": "/bin/bash", 
+    "ansible_user_uid": 0, 
+    "ansible_userspace_architecture": "x86_64", 
+    "ansible_userspace_bits": "64", 
+    "ansible_virtualization_role": "host", 
+    "ansible_virtualization_type": "kvm", 
+    "discovered_interpreter_python": "/usr/bin/python", 
+    "gather_subset": [
+        "all"
+    ], 
+    "module_setup": true
+}

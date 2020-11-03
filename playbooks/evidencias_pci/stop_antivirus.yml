@@ -1,0 +1,8 @@
+---
+- name: evidencia erro ao parar antivirus 
+  hosts: all
+  tasks:
+    - name: parando falcon-sensor
+      service:
+        name: falcon-sensor
+        state: stopped

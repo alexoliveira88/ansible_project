@@ -1,0 +1,6 @@
+---
+- name: Execute roles to PCI Linux environment 
+  hosts: all
+  roles:
+   - {role: pci_linux}
+

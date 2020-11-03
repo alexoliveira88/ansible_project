@@ -1,0 +1,292 @@
+---
+###########################Files###########################################
+- name: create directory monitoring
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - /etc/locaweb
+    - /etc/locaweb/monitoring
+  tags: Files
+
+- name: Files that don't need to reloaded
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+
+  loop:
+    - { src: 'Locaweb-Sudo', dest: '/etc/sudoers.d/Locaweb-Sudo', mode: '0644', owner: root, group: root }
+    - { src: 'banner', dest: '/etc/ssh/banner', mode: '0644', owner: root, group: root }
+    - { src: 'bash-tap.sh', dest: '/etc/profile.d/bash-tap.sh', mode: '0644', owner: root, group: root }
+    - { src: 'CIS.conf', dest: '/etc/modprobe.d/CIS.conf', mode: '0644', owner: root, group: root }
+    - { src: 'monitoring/cmk-agent', dest: '/usr/bin/cmk-agent', mode: '0755', owner: root, group: root }
+    - { src: 'monitoring/cmk-locaweb-plugins', dest: '/usr/bin/cmk-locaweb-plugins', mode: '0755', owner: root, group: root }
+    - { src: 'monitoring/run-cmk-agent', dest: '/usr/bin/run-cmk-agent', mode: '0755', owner: root, group: root }
+    - { src: 'monitoring/run-cmk', dest: '/etc/cron.d/run-cmk', mode: '0644', owner: root, group: root }
+    - { src: 'monitoring/influx.yaml', dest: '/etc/locaweb/monitoring/influx.yaml', mode: '0644', owner: root, group: root }
+    - { src: 'monitoring/basic.yaml', dest: '/etc/locaweb/monitoring/basic.yaml', mode: '0644', owner: root, group: root }
+    - { src: 'securetty', dest: '/etc/securetty', mode: '0644', owner: root, group: root }
+  tags: Files, Hardening
+
+- name: Files that need to be reloaded
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+  notify: "{{ item.notify }}"
+
+  loop:
+    - { src: 'telegraf.conf', dest: '/etc/telegraf/telegraf.conf', mode: '0644', owner: root, group: root, notify: reload telegraf }
+    - { src: 'graylog.conf', dest: '/etc/rsyslog.d/graylog.conf', mode: '0644', owner: root, group: root, notify: restart rsyslog }
+    - { src: 'sshd_config', dest: '/etc/ssh/sshd_config', mode: '1600', owner: root, group: root, notify: restart sshd }
+    - { src: 'sysctl.conf', dest: '/etc/sysctl.d/hardening.conf', mode: '1644', owner: root, group: root, notify: [ reload sysctl ] }
+  tags: Files, Hardening
+
+- name: DNS NTP Servers
+  copy:
+    src: resolv-ntp.conf
+    dest: /etc/resolv.conf
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_hostname == 'corelddns0010' or ansible_hostname == 'corelcdns0011')
+  tags: Files
+
+- name: DNS Configuration
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_hostname != 'corelddns0010' and ansible_hostname != 'corelcdns0011')
+  tags: Files
+
+- name: Chronyd Server configuration
+  copy:
+    src: ntp_servers.conf
+    dest: /etc/chrony.conf
+    mode: '0644'
+    owner: root
+    group: root
+  notify: restart chronyd
+  when: (ansible_hostname == 'corelddns0010' or ansible_hostname == 'corelcdns0011')
+  tags: Files, ntp_servers
+
+- name: Chronyd Client configuration
+  copy:
+    src: ntp_clients.conf
+    dest: /etc/chrony.conf
+    mode: '0644'
+    owner: root
+    group: root
+  notify: restart chronyd
+  when: (ansible_hostname != 'corelddns0010' and ansible_hostname != 'corelcdns0011')
+  tags: Files, ntp_clients
+
+- name: RHEL Pam authentication by Active diretory
+  copy:
+    src: pam/redhat_system-auth
+    dest: /etc/pam.d/system-auth
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_hostname != 'coreldgwl0001' and ansible_hostname != 'corelcgwl0002' and ansible_os_family == 'RedHat')
+  tags: Files
+
+- name: RHEL Pam authentication by Active diretory
+  copy:
+    src: pam/redhat_password-auth
+    dest: /etc/pam.d/password-auth
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_hostname != 'coreldgwl0001' and ansible_hostname != 'corelcgwl0002' and ansible_os_family == 'RedHat')
+  tags: Files
+
+##### Only RHEL7 e RHEL8 
+- name: bloco MFA Jumpservers PCI
+  block:
+    - name: install pam_radius
+      yum:
+        name: pam_radius
+        state: present
+ 
+    - name: RHEL Pam sudo configuration 
+      copy:
+        src: pam/sudo_jumpservers
+        dest: /etc/pam.d/sudo
+        mode: '0644'
+        owner: root
+        group: root
+
+    - name: RHEL Pam system-auth configuration 
+      copy:
+        src: pam/system-auth_jumpservers
+        dest: /etc/pam.d/system-auth
+        mode: '0644'
+        owner: root
+        group: root
+
+    - name: RHEL Pam password-auth configuration 
+      copy:
+        src: pam/password-auth_jumpserver
+        dest: /etc/pam.d/password-auth
+        mode: '0644'
+        owner: root
+        group: root
+
+    - name: Bloco RHEL Pam sshd configuration
+      copy:
+        src: pam/sshd_jumpservers
+        dest: /etc/pam.d/sshd
+        mode: '0644'
+        owner: root
+        group: root
+  when: ansible_hostname == 'corelcgwl0002'
+  tags: Files
+
+- name: RHEL Disable Selinux
+  copy:
+    src: selinux_config
+    dest: /etc/selinux/config
+    mode: '0644'
+    owner: root
+    group: root
+  notify: disable selinux
+  when: ansible_os_family == 'RedHat'
+  tags: Files
+
+- name: Debian Pam authentication by Active diretory
+  copy:
+    src: pam/debian_common-password
+    dest: /etc/pam.d/common-password
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_os_family == 'Debian'
+  tags: Files
+
+- name: Debian Pam authentication by Active diretory
+  copy:
+    src: pam/debian_common-auth
+    dest: /etc/pam.d/common-auth
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_os_family == 'Debian'
+  tags: Files
+
+- name: Debian sssd configuration
+  copy:
+    src: sssd.conf
+    dest: /etc/sssd/sssd.conf
+    mode: '0600'
+    owner: root
+    group: root
+  notify: restart sssd
+  when: ansible_os_family == 'Debian'
+  tags: Files
+
+- name: RHEL sssd configuration
+  copy:
+    src: sssd.conf
+    dest: /etc/sssd/sssd.conf
+    mode: '0600'
+    owner: root
+    group: root
+  notify: 
+     - enable sssd
+     - restart sssd
+  when: ansible_os_family == 'RedHat'
+  tags: Files
+
+- name: Check Permission to Hardening
+  file:
+    path: "{{ item.path }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    state: "{{ item.state }}"
+
+  loop:
+    - { path: '/etc/ssh/sshd_config', mode: '1600', owner: root, group: root, state: file }
+    - { path: '/etc/passwd', mode: '1644', owner: root, group: root, state: file }
+    - { path: '/etc/shadow', mode: '0000', owner: root, group: root, state: file }
+    - { path: '/etc/group', mode: '1644', owner: root, group: root, state: file }
+    - { path: '/etc/gshadow', mode: '0000', owner: root, group: root, state: file }
+    - { path: '/var/tmp', mode: '1777', owner: root, group: root, state: directory }
+    - { path: '/tmp', mode: '1777', owner: root, group: root, state: directory }
+    - { path: '/etc/xinetd.d', mode: '0755', owner: root, group: root, state: directory }
+    - { path: '/etc/sysctl.conf', mode: '1644', owner: root, group: root, state: file }
+    - { path: '/etc/sysctl.d/hardening.conf', mode: '1644', owner: root, group: root, state: file }
+  tags: Hardening
+
+- name: Check that the /usr/bin/gcc exists
+  stat:
+    path: /usr/bin/gcc
+  register: gcc_result
+  tags: Hardening
+
+- name: Check Permission gcc to Hardening
+  file:
+    path: /usr/bin/gcc
+    mode: 0750
+    owner: root
+    group: root
+    state: file
+  when: gcc_result.stat.exists
+  tags: Hardening
+
+#########################################Services##########################
+- name: Start services, if not started
+  service:
+    name: '{{ item }}'
+    enabled: yes
+    state: started
+  loop:
+  - telegraf
+  - sshd
+  - sssd
+  - rsyslog
+  - chronyd
+  - falcon-sensor
+  ignore_errors: yes
+  tags: Services, Hardening
+
+- name: RHEL start services, if not started
+  service:
+    name: '{{ item }}'
+    enabled: yes
+    state: started
+  loop:
+  - ossec-hids
+  when: ansible_os_family == 'RedHat'
+  ignore_errors: yes
+  tags: Services, Hardening
+
+- name: RHEL stop firewalld
+  service:
+    name: firewalld
+    enabled: no
+    state: stopped
+  when: ansible_os_family == 'RedHat' and ansible_distribution_major_version >= "7"
+  ignore_errors: yes
+  tags: Services, Hardening
+
+- name: Debian start services, if not started
+  service:
+    name: '{{ item }}'
+    enabled: yes
+    state: started
+  loop:
+  - ossec
+  when: ansible_os_family == 'Debian'
+  ignore_errors: yes
+  tags: Services, Hardening

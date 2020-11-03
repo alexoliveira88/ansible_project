@@ -1,0 +1,30 @@
+---
+- name: Creating c2go group
+  group:
+    name: c2go
+    state: present
+  tags: Users
+
+### Nextios Users
+- name:  add Nextios users 
+  user:
+    name: "{{ item }}"
+    group: c2go
+    create_home: yes 
+    shell: /bin/bash
+    #append: false
+  ignore_errors: yes
+  loop:  "{{ nextios_usersadd }}"
+  tags: Users
+
+- name: Set authorized key to SysAdmins
+  authorized_key:
+    user: "{{ item }}"
+    state: present
+    exclusive: yes
+    key: "{{ lookup('file', '/home/{{ item }}/.ssh/id_rsa.pub') }}"
+    #key: "{{ lookup('file', '/etc/ansible/playbooks/roles/c2go_linux/files/ssh/{{ item }}.pub') }}"
+    key_options: 'from="10.33.92.4,10.33.92.6,186.202.36.82,186.202.36.93,186.202.40.206,177.52.131.169"'
+  loop:  "{{ nextios_usersadd }}"
+  tags: Users
+

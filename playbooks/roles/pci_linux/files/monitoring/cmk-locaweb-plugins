@@ -1,0 +1,11 @@
+#!/usr/bin/python
+## Managed by Ansible
+try:
+    import lap
+except:
+    print "Installl package check-mk-agent-locaweb-plugins."
+
+if __name__ == '__main__':
+    for check in lap.load_plugins():
+        status, description, perfdata, output = lap.execute_plugin(check)
+        print status, description, perfdata, output

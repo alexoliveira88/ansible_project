@@ -1,0 +1,45 @@
+---
+# handlers file for linux_pci
+
+- name: restart sshd
+  service:
+    name: sshd
+    state: restarted
+    
+- name: restart sssd
+  service:
+    name: sssd
+    state: restarted
+  
+- name: restart chronyd
+  service:
+    name: chronyd
+    state: restarted
+
+- name: reload telegraf
+  service:
+    name: telegraf
+    state: reloaded
+
+- name: restart rsyslog
+  service:
+    name: rsyslog
+    state: restarted
+
+- name: appliyng license crowdstrike 
+  shell: /opt/CrowdStrike/falconctl -s --cid=B9A12D4C117241D5A9E291BCDE89BF6E-28 -f
+
+- name: enable sssd
+  shell: /usr/sbin/authconfig --update --enablesssd --enablesssdauth --enablemkhomedir
+
+- name: reload sysctl  
+  shell: /sbin/sysctl -p /etc/sysctl.d/hardening.conf
+
+- name: disable selinux
+  shell: /usr/sbin/setenforce 0
+ 
+- name: restart falcon-sensor
+  service:
+    name: falcon-sensor
+    state: restarted
+ 

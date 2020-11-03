@@ -1,0 +1,24 @@
+---
+- name: Security Update
+  hosts: all
+  gather_facts: true
+  tasks:
+#    - name: Stopped and disabled Services
+#      service:
+#        name: '{{ item }}'
+#        enabled: no
+#        state: stopped
+#      loop:
+#      - nagios-nrpe-server
+#      - leela-agent
+#      - collectd
+#      - uptimed
+#      - motd  
+##      when: ansible_local['openshift'] != 1
+
+    - name: Linux remove package
+      package:
+        #name: [ 'nagios-nrpe-server','leela-agent','leela-client', 'leela-c', 'leela-python', 'collectd', 'uptimed', 'motd' ]
+        name: [ 'nagios-nrpe-server','leela-agent','leela-client', 'leela-c', 'leela-python', 'collectd', 'uptimed', 'motd']
+        state: absent
+

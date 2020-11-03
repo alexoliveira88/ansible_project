@@ -1,0 +1,3675 @@
+{
+    "_ansible_facts_gathered": true, 
+    "ansible_all_ipv4_addresses": [
+        "10.33.6.10", 
+        "10.19.63.4"
+    ], 
+    "ansible_all_ipv6_addresses": [
+        "fe80::f603:43ff:fe54:ad50", 
+        "fe80::2e44:fdff:fe8e:3180"
+    ], 
+    "ansible_apparmor": {
+        "status": "disabled"
+    }, 
+    "ansible_architecture": "x86_64", 
+    "ansible_bios_date": "09/13/2016", 
+    "ansible_bios_version": "P89", 
+    "ansible_bond0": {
+        "active": true, 
+        "device": "bond0", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "off [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [requested on]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "10.33.6.10", 
+            "broadcast": "10.33.6.255", 
+            "netmask": "255.255.255.0", 
+            "network": "10.33.6.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::f603:43ff:fe54:ad50", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "lacp_rate": "fast", 
+        "macaddress": "f4:03:43:54:ad:50", 
+        "miimon": "100", 
+        "mode": "802.3ad", 
+        "mtu": 1500, 
+        "promisc": false, 
+        "slaves": [
+            "eno1", 
+            "eno2"
+        ], 
+        "speed": 2000, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "bonding"
+    }, 
+    "ansible_bond1": {
+        "active": true, 
+        "device": "bond1", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "off [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [requested on]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "10.19.63.4", 
+            "broadcast": "10.19.63.255", 
+            "netmask": "255.255.255.0", 
+            "network": "10.19.63.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::2e44:fdff:fe8e:3180", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "lacp_rate": "fast", 
+        "macaddress": "2c:44:fd:8e:31:80", 
+        "miimon": "100", 
+        "mode": "802.3ad", 
+        "mtu": 1500, 
+        "promisc": false, 
+        "slaves": [
+            "ens2f0", 
+            "ens2f1"
+        ], 
+        "speed": 20000, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "bonding"
+    }, 
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-3.10.0-1127.10.1.el7.x86_64", 
+        "LANG": "en_US.UTF-8", 
+        "crashkernel": "auto", 
+        "quiet": true, 
+        "rd.lvm.lv": "vg_system/swap", 
+        "rhgb": true, 
+        "ro": true, 
+        "root": "/dev/mapper/vg_system-root"
+    }, 
+    "ansible_date_time": {
+        "date": "2020-11-03", 
+        "day": "03", 
+        "epoch": "1604408191", 
+        "hour": "09", 
+        "iso8601": "2020-11-03T12:56:31Z", 
+        "iso8601_basic": "20201103T095631466804", 
+        "iso8601_basic_short": "20201103T095631", 
+        "iso8601_micro": "2020-11-03T12:56:31.466804Z", 
+        "minute": "56", 
+        "month": "11", 
+        "second": "31", 
+        "time": "09:56:31", 
+        "tz": "-03", 
+        "tz_offset": "-0300", 
+        "weekday": "Tuesday", 
+        "weekday_number": "2", 
+        "weeknumber": "44", 
+        "year": "2020"
+    }, 
+    "ansible_default_ipv4": {
+        "address": "10.33.6.10", 
+        "alias": "bond0", 
+        "broadcast": "10.33.6.255", 
+        "gateway": "10.33.6.1", 
+        "interface": "bond0", 
+        "macaddress": "f4:03:43:54:ad:50", 
+        "mtu": 1500, 
+        "netmask": "255.255.255.0", 
+        "network": "10.33.6.0", 
+        "type": "bonding"
+    }, 
+    "ansible_default_ipv6": {}, 
+    "ansible_device_links": {
+        "ids": {
+            "dm-0": [
+                "dm-name-vg_system-root", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQSENTv8GXio7RvazX3nakySYTHEHkVkeE"
+            ], 
+            "dm-1": [
+                "dm-name-vg_system-swap", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQkQMi0rspew8N1VxRDAPSfsxh8KHuTjtO"
+            ], 
+            "dm-10": [
+                "dm-name-mpathe1", 
+                "dm-uuid-part1-mpath-3600601600d90410046641a5d2765418b"
+            ], 
+            "dm-11": [
+                "dm-name-mpathc1", 
+                "dm-uuid-part1-mpath-36006016005e041004bf9ff5bad7d9066"
+            ], 
+            "dm-12": [
+                "dm-name-vg_system-u01", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQYksUTmnhG0L7KopgyoLLhYB3x1Uq8m7U"
+            ], 
+            "dm-13": [
+                "dm-name-vg_system-u02", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQb43wGffQvfN2uVB40GM7ZrOVzUlqVyta"
+            ], 
+            "dm-14": [
+                "dm-name-vg_system-home", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQF1HBUxM0hFqnfx7gwsA5k1Fg1UdRCQOZ"
+            ], 
+            "dm-15": [
+                "dm-name-vg_system-var", 
+                "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQXeOZSJRlPh7k538flWf1t30et4AB2GSG"
+            ], 
+            "dm-2": [
+                "dm-name-mpatha", 
+                "dm-uuid-mpath-36006016005e0410052f9ff5b07cdcf73"
+            ], 
+            "dm-3": [
+                "dm-name-mpathb", 
+                "dm-uuid-mpath-36006016005e0410058f9ff5be577efa6"
+            ], 
+            "dm-4": [
+                "dm-name-mpathd", 
+                "dm-uuid-mpath-3600601600d90410014ff035d657c16a9"
+            ], 
+            "dm-5": [
+                "dm-name-mpathe", 
+                "dm-uuid-mpath-3600601600d90410046641a5d2765418b"
+            ], 
+            "dm-6": [
+                "dm-name-mpathc", 
+                "dm-uuid-mpath-36006016005e041004bf9ff5bad7d9066"
+            ], 
+            "dm-7": [
+                "dm-name-mpatha1", 
+                "dm-uuid-part1-mpath-36006016005e0410052f9ff5b07cdcf73"
+            ], 
+            "dm-8": [
+                "dm-name-mpathd1", 
+                "dm-uuid-part1-mpath-3600601600d90410014ff035d657c16a9"
+            ], 
+            "dm-9": [
+                "dm-name-mpathb1", 
+                "dm-uuid-part1-mpath-36006016005e0410058f9ff5be577efa6"
+            ], 
+            "sda": [
+                "scsi-3600508b1001c53dd3576892c9c7ae521", 
+                "wwn-0x600508b1001c53dd3576892c9c7ae521"
+            ], 
+            "sda1": [
+                "scsi-3600508b1001c53dd3576892c9c7ae521-part1", 
+                "wwn-0x600508b1001c53dd3576892c9c7ae521-part1"
+            ], 
+            "sda2": [
+                "scsi-3600508b1001c53dd3576892c9c7ae521-part2", 
+                "wwn-0x600508b1001c53dd3576892c9c7ae521-part2"
+            ], 
+            "sda3": [
+                "lvm-pv-uuid-mTdA6e-6Pld-72W5-xo5w-igR7-QQLk-3zQQle", 
+                "scsi-3600508b1001c53dd3576892c9c7ae521-part3", 
+                "wwn-0x600508b1001c53dd3576892c9c7ae521-part3"
+            ], 
+            "sdae": [
+                "scsi-350060160c7e059f250060160c7e059f2", 
+                "wwn-0x50060160c7e059f250060160c7e059f2"
+            ], 
+            "sdah": [
+                "scsi-350060160c7e0562150060160c7e05621", 
+                "wwn-0x50060160c7e0562150060160c7e05621"
+            ], 
+            "sdan": [
+                "scsi-36006016005e041004bf9ff5bad7d9066", 
+                "wwn-0x6006016005e041004bf9ff5bad7d9066"
+            ], 
+            "sdar": [
+                "scsi-3600601600d90410046641a5d2765418b", 
+                "wwn-0x600601600d90410046641a5d2765418b"
+            ], 
+            "sday": [
+                "scsi-36006016005e0410052f9ff5b07cdcf73", 
+                "wwn-0x6006016005e0410052f9ff5b07cdcf73"
+            ], 
+            "sdj": [
+                "scsi-36006016005e0410058f9ff5be577efa6", 
+                "wwn-0x6006016005e0410058f9ff5be577efa6"
+            ], 
+            "sdp": [
+                "scsi-3600601600d90410014ff035d657c16a9", 
+                "wwn-0x600601600d90410014ff035d657c16a9"
+            ]
+        }, 
+        "labels": {
+            "dm-10": [
+                "DATA04"
+            ], 
+            "dm-11": [
+                "DATA01"
+            ], 
+            "dm-7": [
+                "DATA02"
+            ], 
+            "dm-8": [
+                "DATA03"
+            ], 
+            "dm-9": [
+                "ARCH01"
+            ]
+        }, 
+        "masters": {
+            "dm-2": [
+                "dm-7"
+            ], 
+            "dm-3": [
+                "dm-9"
+            ], 
+            "dm-4": [
+                "dm-8"
+            ], 
+            "dm-5": [
+                "dm-10"
+            ], 
+            "dm-6": [
+                "dm-11"
+            ], 
+            "sda3": [
+                "dm-0", 
+                "dm-1", 
+                "dm-12", 
+                "dm-13", 
+                "dm-14", 
+                "dm-15"
+            ], 
+            "sdai": [
+                "dm-6"
+            ], 
+            "sdaj": [
+                "dm-2"
+            ], 
+            "sdak": [
+                "dm-3"
+            ], 
+            "sdal": [
+                "dm-4"
+            ], 
+            "sdam": [
+                "dm-5"
+            ], 
+            "sdan": [
+                "dm-6"
+            ], 
+            "sdao": [
+                "dm-2"
+            ], 
+            "sdap": [
+                "dm-3"
+            ], 
+            "sdaq": [
+                "dm-4"
+            ], 
+            "sdar": [
+                "dm-5"
+            ], 
+            "sdas": [
+                "dm-3"
+            ], 
+            "sdat": [
+                "dm-4"
+            ], 
+            "sdau": [
+                "dm-4"
+            ], 
+            "sdav": [
+                "dm-5"
+            ], 
+            "sdaw": [
+                "dm-5"
+            ], 
+            "sdax": [
+                "dm-6"
+            ], 
+            "sday": [
+                "dm-2"
+            ], 
+            "sdaz": [
+                "dm-3"
+            ], 
+            "sdba": [
+                "dm-4"
+            ], 
+            "sdbb": [
+                "dm-5"
+            ], 
+            "sdc": [
+                "dm-6"
+            ], 
+            "sdd": [
+                "dm-2"
+            ], 
+            "sde": [
+                "dm-3"
+            ], 
+            "sdf": [
+                "dm-4"
+            ], 
+            "sdg": [
+                "dm-5"
+            ], 
+            "sdh": [
+                "dm-6"
+            ], 
+            "sdi": [
+                "dm-2"
+            ], 
+            "sdj": [
+                "dm-3"
+            ], 
+            "sdk": [
+                "dm-4"
+            ], 
+            "sdl": [
+                "dm-5"
+            ], 
+            "sdm": [
+                "dm-6"
+            ], 
+            "sdn": [
+                "dm-2"
+            ], 
+            "sdo": [
+                "dm-3"
+            ], 
+            "sdp": [
+                "dm-4"
+            ], 
+            "sdq": [
+                "dm-5"
+            ], 
+            "sdt": [
+                "dm-6"
+            ], 
+            "sdu": [
+                "dm-6"
+            ], 
+            "sdv": [
+                "dm-2"
+            ], 
+            "sdw": [
+                "dm-2"
+            ], 
+            "sdx": [
+                "dm-3"
+            ]
+        }, 
+        "uuids": {
+            "dm-0": [
+                "6083eb17-bf80-46d9-bf79-cc1cb789844a"
+            ], 
+            "dm-1": [
+                "7c510a75-53f3-4dbd-a1ed-be4de740ba3e"
+            ], 
+            "dm-12": [
+                "e1098d5f-2ed6-4160-8729-3bfe16a02ff6"
+            ], 
+            "dm-13": [
+                "a34efb97-4181-46f6-982f-cffb85f15543"
+            ], 
+            "dm-14": [
+                "b31f01f2-4f9e-4724-bb75-3717b0802ead"
+            ], 
+            "dm-15": [
+                "e5148b67-e031-4341-865a-a8f0917b3aa0"
+            ], 
+            "sda2": [
+                "59dc59cd-0f4e-4a77-8862-ab1cfcdea40f"
+            ]
+        }
+    }, 
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-root", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQSENTv8GXio7RvazX3nakySYTHEHkVkeE"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "6083eb17-bf80-46d9-bf79-cc1cb789844a"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "39067648", 
+            "sectorsize": "512", 
+            "size": "18.63 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-1": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-swap", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQkQMi0rspew8N1VxRDAPSfsxh8KHuTjtO"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "7c510a75-53f3-4dbd-a1ed-be4de740ba3e"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "33202176", 
+            "sectorsize": "512", 
+            "size": "15.83 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-10": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathe1", 
+                    "dm-uuid-part1-mpath-3600601600d90410046641a5d2765418b"
+                ], 
+                "labels": [
+                    "DATA04"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "419416828", 
+            "sectorsize": "512", 
+            "size": "199.99 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-11": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathc1", 
+                    "dm-uuid-part1-mpath-36006016005e041004bf9ff5bad7d9066"
+                ], 
+                "labels": [
+                    "DATA01"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "419422208", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-12": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-u01", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQYksUTmnhG0L7KopgyoLLhYB3x1Uq8m7U"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "e1098d5f-2ed6-4160-8729-3bfe16a02ff6"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "97656832", 
+            "sectorsize": "512", 
+            "size": "46.57 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-13": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-u02", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQb43wGffQvfN2uVB40GM7ZrOVzUlqVyta"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "a34efb97-4181-46f6-982f-cffb85f15543"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "97656832", 
+            "sectorsize": "512", 
+            "size": "46.57 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-14": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-home", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQF1HBUxM0hFqnfx7gwsA5k1Fg1UdRCQOZ"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "b31f01f2-4f9e-4724-bb75-3717b0802ead"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "29302784", 
+            "sectorsize": "512", 
+            "size": "13.97 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-15": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-vg_system-var", 
+                    "dm-uuid-LVM-PDyoCZ9itU6L23VNcheRsiaLGewRAdzQXeOZSJRlPh7k538flWf1t30et4AB2GSG"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": [
+                    "e5148b67-e031-4341-865a-a8f0917b3aa0"
+                ]
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "58597376", 
+            "sectorsize": "512", 
+            "size": "27.94 GB", 
+            "support_discard": "0", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-2": {
+            "holders": [
+                "mpatha1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpatha", 
+                    "dm-uuid-mpath-36006016005e0410052f9ff5b07cdcf73"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-7"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-3": {
+            "holders": [
+                "mpathb1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathb", 
+                    "dm-uuid-mpath-36006016005e0410058f9ff5be577efa6"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-9"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-4": {
+            "holders": [
+                "mpathd1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathd", 
+                    "dm-uuid-mpath-3600601600d90410014ff035d657c16a9"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-8"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-5": {
+            "holders": [
+                "mpathe1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathe", 
+                    "dm-uuid-mpath-3600601600d90410046641a5d2765418b"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-10"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-6": {
+            "holders": [
+                "mpathc1"
+            ], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathc", 
+                    "dm-uuid-mpath-36006016005e041004bf9ff5bad7d9066"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-11"
+                ], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-7": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpatha1", 
+                    "dm-uuid-part1-mpath-36006016005e0410052f9ff5b07cdcf73"
+                ], 
+                "labels": [
+                    "DATA02"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "419422208", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-8": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathd1", 
+                    "dm-uuid-part1-mpath-3600601600d90410014ff035d657c16a9"
+                ], 
+                "labels": [
+                    "DATA03"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "419416828", 
+            "sectorsize": "512", 
+            "size": "199.99 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "dm-9": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [
+                    "dm-name-mpathb1", 
+                    "dm-uuid-part1-mpath-36006016005e0410058f9ff5be577efa6"
+                ], 
+                "labels": [
+                    "ARCH01"
+                ], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "419422208", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "sda": {
+            "holders": [], 
+            "host": "RAID bus controller: Hewlett-Packard Company Smart Array Gen9 Controllers (rev 01)", 
+            "links": {
+                "ids": [
+                    "scsi-3600508b1001c53dd3576892c9c7ae521", 
+                    "wwn-0x600508b1001c53dd3576892c9c7ae521"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LOGICAL VOLUME", 
+            "partitions": {
+                "sda1": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [
+                            "scsi-3600508b1001c53dd3576892c9c7ae521-part1", 
+                            "wwn-0x600508b1001c53dd3576892c9c7ae521-part1"
+                        ], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "sectors": "4096", 
+                    "sectorsize": 512, 
+                    "size": "2.00 MB", 
+                    "start": "2048", 
+                    "uuid": null
+                }, 
+                "sda2": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [
+                            "scsi-3600508b1001c53dd3576892c9c7ae521-part2", 
+                            "wwn-0x600508b1001c53dd3576892c9c7ae521-part2"
+                        ], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": [
+                            "59dc59cd-0f4e-4a77-8862-ab1cfcdea40f"
+                        ]
+                    }, 
+                    "sectors": "974848", 
+                    "sectorsize": 512, 
+                    "size": "476.00 MB", 
+                    "start": "6144", 
+                    "uuid": "59dc59cd-0f4e-4a77-8862-ab1cfcdea40f"
+                }, 
+                "sda3": {
+                    "holders": [
+                        "vg_system-root", 
+                        "vg_system-swap", 
+                        "vg_system-u01", 
+                        "vg_system-u02", 
+                        "vg_system-home", 
+                        "vg_system-var"
+                    ], 
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-mTdA6e-6Pld-72W5-xo5w-igR7-QQLk-3zQQle", 
+                            "scsi-3600508b1001c53dd3576892c9c7ae521-part3", 
+                            "wwn-0x600508b1001c53dd3576892c9c7ae521-part3"
+                        ], 
+                        "labels": [], 
+                        "masters": [
+                            "dm-0", 
+                            "dm-1", 
+                            "dm-12", 
+                            "dm-13", 
+                            "dm-14", 
+                            "dm-15"
+                        ], 
+                        "uuids": []
+                    }, 
+                    "sectors": "936654848", 
+                    "sectorsize": 512, 
+                    "size": "446.63 GB", 
+                    "start": "980992", 
+                    "uuid": null
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "0", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "937637552", 
+            "sectorsize": "512", 
+            "size": "447.10 GB", 
+            "support_discard": "0", 
+            "vendor": "HP", 
+            "virtual": 1, 
+            "wwn": "0x600508b1001c53dd3576892c9c7ae521"
+        }, 
+        "sdaa": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdab": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdac": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdad": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdae": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-350060160c7e059f250060160c7e059f2", 
+                    "wwn-0x50060160c7e059f250060160c7e059f2"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x50060160c7e059f250060160c7e059f2"
+        }, 
+        "sdaf": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdag": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdah": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-350060160c7e0562150060160c7e05621", 
+                    "wwn-0x50060160c7e0562150060160c7e05621"
+                ], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x50060160c7e0562150060160c7e05621"
+        }, 
+        "sdai": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaj": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdak": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdal": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdam": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdan": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e041004bf9ff5bad7d9066", 
+                    "wwn-0x6006016005e041004bf9ff5bad7d9066"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e041004bf9ff5bad7d9066"
+        }, 
+        "sdao": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdap": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaq": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdar": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d90410046641a5d2765418b", 
+                    "wwn-0x600601600d90410046641a5d2765418b"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d90410046641a5d2765418b"
+        }, 
+        "sdas": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdat": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdau": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdav": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdaw": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdax": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sday": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e0410052f9ff5b07cdcf73", 
+                    "wwn-0x6006016005e0410052f9ff5b07cdcf73"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e0410052f9ff5b07cdcf73"
+        }, 
+        "sdaz": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdb": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdba": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbb": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbc": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbd": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbe": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbf": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbg": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbh": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdbi": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdc": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdd": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sde": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdf": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdg": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdh": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdi": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdj": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-36006016005e0410058f9ff5be577efa6", 
+                    "wwn-0x6006016005e0410058f9ff5be577efa6"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x6006016005e0410058f9ff5be577efa6"
+        }, 
+        "sdk": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdl": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdm": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdn": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdo": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdp": {
+            "holders": [
+                "mpathd"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [
+                    "scsi-3600601600d90410014ff035d657c16a9", 
+                    "wwn-0x600601600d90410014ff035d657c16a9"
+                ], 
+                "labels": [], 
+                "masters": [
+                    "dm-4"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1, 
+            "wwn": "0x600601600d90410014ff035d657c16a9"
+        }, 
+        "sdq": {
+            "holders": [
+                "mpathe"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-5"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdr": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sds": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdt": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdu": {
+            "holders": [
+                "mpathc"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-6"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdv": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdw": {
+            "holders": [
+                "mpatha"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-2"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdx": {
+            "holders": [
+                "mpathb"
+            ], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [
+                    "dm-3"
+                ], 
+                "uuids": []
+            }, 
+            "model": "VRAID", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "419430400", 
+            "sectorsize": "512", 
+            "size": "200.00 GB", 
+            "support_discard": "512", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdy": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }, 
+        "sdz": {
+            "holders": [], 
+            "host": "Fibre Channel: Emulex Corporation LPe12000 Series 8Gb Fibre Channel Adapter (rev 03)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "LUNZ", 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "deadline", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": "0", 
+            "vendor": "DGC", 
+            "virtual": 1
+        }
+    }, 
+    "ansible_distribution": "RedHat", 
+    "ansible_distribution_file_parsed": true, 
+    "ansible_distribution_file_path": "/etc/redhat-release", 
+    "ansible_distribution_file_search_string": "Red Hat", 
+    "ansible_distribution_file_variety": "RedHat", 
+    "ansible_distribution_major_version": "7", 
+    "ansible_distribution_release": "Maipo", 
+    "ansible_distribution_version": "7.8", 
+    "ansible_dns": {
+        "nameservers": [
+            "10.33.91.32", 
+            "10.33.91.33"
+        ], 
+        "options": {
+            "timeout": "1"
+        }, 
+        "search": [
+            "ed.locaweb.com.br", 
+            "locaweb.com.br", 
+            "lwo.locaweb.com.br"
+        ]
+    }, 
+    "ansible_domain": "ed.locaweb.com.br", 
+    "ansible_effective_group_id": 0, 
+    "ansible_effective_user_id": 0, 
+    "ansible_eno1": {
+        "active": true, 
+        "device": "eno1", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "f4:03:43:54:ad:50", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.0", 
+        "perm_macaddress": "f4:03:43:54:ad:50", 
+        "phc_index": 0, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno2": {
+        "active": true, 
+        "device": "eno2", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "f4:03:43:54:ad:50", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.1", 
+        "perm_macaddress": "f4:03:43:54:ad:51", 
+        "phc_index": 1, 
+        "promisc": false, 
+        "speed": 1000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno3": {
+        "active": false, 
+        "device": "eno3", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "f4:03:43:54:ad:52", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.2", 
+        "phc_index": 2, 
+        "promisc": false, 
+        "speed": -1, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_eno4": {
+        "active": false, 
+        "device": "eno4", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "off [fixed]", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "on [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_l2_event"
+        ], 
+        "macaddress": "f4:03:43:54:ad:53", 
+        "module": "tg3", 
+        "mtu": 1500, 
+        "pciid": "0000:02:00.3", 
+        "phc_index": 3, 
+        "promisc": false, 
+        "speed": -1, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_ens2f0": {
+        "active": true, 
+        "device": "ens2f0", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "on", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off", 
+            "rx_udp_tunnel_port_offload": "on", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "on", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_event"
+        ], 
+        "macaddress": "2c:44:fd:8e:31:80", 
+        "module": "bnx2x", 
+        "mtu": 1500, 
+        "pciid": "0000:05:00.0", 
+        "perm_macaddress": "2c:44:fd:8e:31:80", 
+        "phc_index": 4, 
+        "promisc": false, 
+        "speed": 10000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_ens2f1": {
+        "active": true, 
+        "device": "ens2f1", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "on", 
+            "loopback": "off", 
+            "netns_local": "off [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "on", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off", 
+            "rx_udp_tunnel_port_offload": "on", 
+            "rx_vlan_filter": "on", 
+            "rx_vlan_offload": "on [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "off [fixed]", 
+            "tx_checksum_ipv4": "on", 
+            "tx_checksum_ipv6": "on", 
+            "tx_checksum_sctp": "off [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "on", 
+            "tx_gre_segmentation": "on", 
+            "tx_gso_partial": "on", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "on", 
+            "tx_lockless": "off [fixed]", 
+            "tx_nocache_copy": "off", 
+            "tx_scatter_gather": "on", 
+            "tx_scatter_gather_fraglist": "off [fixed]", 
+            "tx_sctp_segmentation": "off [fixed]", 
+            "tx_sit_segmentation": "on", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "off", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "on", 
+            "tx_udp_tnl_segmentation": "on", 
+            "tx_vlan_offload": "on", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "off [fixed]", 
+            "vlan_challenged": "off [fixed]"
+        }, 
+        "hw_timestamp_filters": [
+            "none", 
+            "ptp_v1_l4_event", 
+            "ptp_v2_l4_event", 
+            "ptp_v2_event"
+        ], 
+        "macaddress": "2c:44:fd:8e:31:80", 
+        "module": "bnx2x", 
+        "mtu": 1500, 
+        "pciid": "0000:05:00.1", 
+        "perm_macaddress": "2c:44:fd:8e:31:84", 
+        "phc_index": 5, 
+        "promisc": false, 
+        "speed": 10000, 
+        "timestamping": [
+            "tx_hardware", 
+            "tx_software", 
+            "rx_hardware", 
+            "rx_software", 
+            "software", 
+            "raw_hardware"
+        ], 
+        "type": "ether"
+    }, 
+    "ansible_env": {
+        "HOME": "/root", 
+        "LANG": "C", 
+        "LC_ALL": "C", 
+        "LC_NUMERIC": "C", 
+        "LOGNAME": "root", 
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:", 
+        "MAIL": "/var/mail/alex.oliveira", 
+        "PATH": "/sbin:/bin:/usr/sbin:/usr/bin", 
+        "PWD": "/home/alex.oliveira", 
+        "SHELL": "/bin/bash", 
+        "SHLVL": "1", 
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-vzlbwoxeaodjsuijinfljqjpuingshhi ; /usr/bin/python /home/alex.oliveira/.ansible/tmp/ansible-tmp-1604408189.2-9165-64014632689102/AnsiballZ_setup.py", 
+        "SUDO_GID": "54330", 
+        "SUDO_UID": "54323", 
+        "SUDO_USER": "alex.oliveira", 
+        "TERM": "screen", 
+        "USER": "root", 
+        "USERNAME": "root", 
+        "XDG_SESSION_ID": "428372", 
+        "_": "/usr/bin/python"
+    }, 
+    "ansible_fibre_channel_wwn": [
+        "10000090fa487416", 
+        "10000090fa487417"
+    ], 
+    "ansible_fips": false, 
+    "ansible_form_factor": "Rack Mount Chassis", 
+    "ansible_fqdn": "gpldldora0008.ed.locaweb.com.br", 
+    "ansible_hostname": "gpldldora0008", 
+    "ansible_hostnqn": "", 
+    "ansible_interfaces": [
+        "bond0", 
+        "bond1", 
+        "lo", 
+        "eno1", 
+        "eno2", 
+        "eno3", 
+        "eno4", 
+        "ens2f0", 
+        "ens2f1"
+    ], 
+    "ansible_is_chroot": false, 
+    "ansible_iscsi_iqn": "", 
+    "ansible_kernel": "3.10.0-1127.10.1.el7.x86_64", 
+    "ansible_kernel_version": "#1 SMP Tue May 26 15:05:43 EDT 2020", 
+    "ansible_lo": {
+        "active": true, 
+        "device": "lo", 
+        "features": {
+            "busy_poll": "off [fixed]", 
+            "fcoe_mtu": "off [fixed]", 
+            "generic_receive_offload": "on", 
+            "generic_segmentation_offload": "on", 
+            "highdma": "on [fixed]", 
+            "hw_tc_offload": "off [fixed]", 
+            "l2_fwd_offload": "off [fixed]", 
+            "large_receive_offload": "off [fixed]", 
+            "loopback": "on [fixed]", 
+            "netns_local": "on [fixed]", 
+            "ntuple_filters": "off [fixed]", 
+            "receive_hashing": "off [fixed]", 
+            "rx_all": "off [fixed]", 
+            "rx_checksumming": "on [fixed]", 
+            "rx_fcs": "off [fixed]", 
+            "rx_gro_hw": "off [fixed]", 
+            "rx_udp_tunnel_port_offload": "off [fixed]", 
+            "rx_vlan_filter": "off [fixed]", 
+            "rx_vlan_offload": "off [fixed]", 
+            "rx_vlan_stag_filter": "off [fixed]", 
+            "rx_vlan_stag_hw_parse": "off [fixed]", 
+            "scatter_gather": "on", 
+            "tcp_segmentation_offload": "on", 
+            "tx_checksum_fcoe_crc": "off [fixed]", 
+            "tx_checksum_ip_generic": "on [fixed]", 
+            "tx_checksum_ipv4": "off [fixed]", 
+            "tx_checksum_ipv6": "off [fixed]", 
+            "tx_checksum_sctp": "on [fixed]", 
+            "tx_checksumming": "on", 
+            "tx_fcoe_segmentation": "off [fixed]", 
+            "tx_gre_csum_segmentation": "off [fixed]", 
+            "tx_gre_segmentation": "off [fixed]", 
+            "tx_gso_partial": "off [fixed]", 
+            "tx_gso_robust": "off [fixed]", 
+            "tx_ipip_segmentation": "off [fixed]", 
+            "tx_lockless": "on [fixed]", 
+            "tx_nocache_copy": "off [fixed]", 
+            "tx_scatter_gather": "on [fixed]", 
+            "tx_scatter_gather_fraglist": "on [fixed]", 
+            "tx_sctp_segmentation": "on", 
+            "tx_sit_segmentation": "off [fixed]", 
+            "tx_tcp6_segmentation": "on", 
+            "tx_tcp_ecn_segmentation": "on", 
+            "tx_tcp_mangleid_segmentation": "on", 
+            "tx_tcp_segmentation": "on", 
+            "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+            "tx_udp_tnl_segmentation": "off [fixed]", 
+            "tx_vlan_offload": "off [fixed]", 
+            "tx_vlan_stag_hw_insert": "off [fixed]", 
+            "udp_fragmentation_offload": "on", 
+            "vlan_challenged": "on [fixed]"
+        }, 
+        "hw_timestamp_filters": [], 
+        "ipv4": {
+            "address": "127.0.0.1", 
+            "broadcast": "", 
+            "netmask": "255.0.0.0", 
+            "network": "127.0.0.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "::1", 
+                "prefix": "128", 
+                "scope": "host"
+            }
+        ], 
+        "mtu": 65536, 
+        "promisc": false, 
+        "timestamping": [
+            "rx_software", 
+            "software"
+        ], 
+        "type": "loopback"
+    }, 
+    "ansible_local": {
+        "customtelegraf": 1, 
+        "isilon": 0, 
+        "openshift": 0, 
+        "oracle": 1, 
+        "pci_wex": 0, 
+        "sap": 0, 
+        "sap_isilon": 0
+    }, 
+    "ansible_lsb": {}, 
+    "ansible_lvm": {
+        "lvs": {
+            "home": {
+                "size_g": "13.97", 
+                "vg": "vg_system"
+            }, 
+            "root": {
+                "size_g": "18.63", 
+                "vg": "vg_system"
+            }, 
+            "swap": {
+                "size_g": "15.83", 
+                "vg": "vg_system"
+            }, 
+            "u01": {
+                "size_g": "46.57", 
+                "vg": "vg_system"
+            }, 
+            "u02": {
+                "size_g": "46.57", 
+                "vg": "vg_system"
+            }, 
+            "var": {
+                "size_g": "27.94", 
+                "vg": "vg_system"
+            }
+        }, 
+        "pvs": {
+            "/dev/sda3": {
+                "free_g": "277.12", 
+                "size_g": "446.63", 
+                "vg": "vg_system"
+            }
+        }, 
+        "vgs": {
+            "vg_system": {
+                "free_g": "277.12", 
+                "num_lvs": "6", 
+                "num_pvs": "1", 
+                "size_g": "446.63"
+            }
+        }
+    }, 
+    "ansible_machine": "x86_64", 
+    "ansible_machine_id": "1b29295cd0d949edae351c2bcfffaccd", 
+    "ansible_memfree_mb": 745, 
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 100098, 
+            "used": 28548
+        }, 
+        "real": {
+            "free": 745, 
+            "total": 128646, 
+            "used": 127901
+        }, 
+        "swap": {
+            "cached": 10, 
+            "free": 16090, 
+            "total": 16211, 
+            "used": 121
+        }
+    }, 
+    "ansible_memtotal_mb": 128646, 
+    "ansible_mounts": [
+        {
+            "block_available": 416967104, 
+            "block_size": 262144, 
+            "block_total": 3631397955, 
+            "block_used": 3214430851, 
+            "device": "10.19.63.11:/PEFS-5269/", 
+            "fstype": "nfs", 
+            "inode_available": 228113602182, 
+            "inode_total": 1373184000000, 
+            "inode_used": 1145070397818, 
+            "mount": "/u03_old", 
+            "options": "rw,sync,relatime,vers=3,rsize=262144,wsize=262144,namlen=255,acregmin=0,acregmax=0,acdirmin=0,acdirmax=0,hard,noac,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.19.63.11,mountvers=3,mountport=300,mountproto=tcp,local_lock=none,addr=10.19.63.11", 
+            "size_available": 109305424510976, 
+            "size_total": 951949185515520, 
+            "uuid": "N/A"
+        }, 
+        {
+            "block_available": 4972425, 
+            "block_size": 4096, 
+            "block_total": 7176937, 
+            "block_used": 2204512, 
+            "device": "/dev/mapper/vg_system-var", 
+            "fstype": "ext4", 
+            "inode_available": 1820095, 
+            "inode_total": 1831424, 
+            "inode_used": 11329, 
+            "mount": "/var", 
+            "options": "rw,relatime,stripe=64,data=ordered", 
+            "size_available": 20367052800, 
+            "size_total": 29396733952, 
+            "uuid": "e5148b67-e031-4341-865a-a8f0917b3aa0"
+        }, 
+        {
+            "block_available": 2642978, 
+            "block_size": 4096, 
+            "block_total": 3572594, 
+            "block_used": 929616, 
+            "device": "/dev/mapper/vg_system-home", 
+            "fstype": "ext4", 
+            "inode_available": 915231, 
+            "inode_total": 915712, 
+            "inode_used": 481, 
+            "mount": "/home", 
+            "options": "rw,relatime,stripe=64,data=ordered", 
+            "size_available": 10825637888, 
+            "size_total": 14633345024, 
+            "uuid": "b31f01f2-4f9e-4724-bb75-3717b0802ead"
+        }, 
+        {
+            "block_available": 98302, 
+            "block_size": 1024, 
+            "block_total": 463826, 
+            "block_used": 365524, 
+            "device": "/dev/sda2", 
+            "fstype": "ext4", 
+            "inode_available": 121570, 
+            "inode_total": 121920, 
+            "inode_used": 350, 
+            "mount": "/boot", 
+            "options": "rw,relatime,stripe=256,data=ordered", 
+            "size_available": 100661248, 
+            "size_total": 474957824, 
+            "uuid": "59dc59cd-0f4e-4a77-8862-ab1cfcdea40f"
+        }, 
+        {
+            "block_available": 3164953, 
+            "block_size": 4096, 
+            "block_total": 4773994, 
+            "block_used": 1609041, 
+            "device": "/dev/mapper/vg_system-root", 
+            "fstype": "ext4", 
+            "inode_available": 1152870, 
+            "inode_total": 1221600, 
+            "inode_used": 68730, 
+            "mount": "/", 
+            "options": "rw,relatime,stripe=64,data=ordered", 
+            "size_available": 12963647488, 
+            "size_total": 19554279424, 
+            "uuid": "6083eb17-bf80-46d9-bf79-cc1cb789844a"
+        }, 
+        {
+            "block_available": 1424779, 
+            "block_size": 4096, 
+            "block_total": 11982523, 
+            "block_used": 10557744, 
+            "device": "/dev/mapper/vg_system-u01", 
+            "fstype": "ext4", 
+            "inode_available": 1685405, 
+            "inode_total": 3055616, 
+            "inode_used": 1370211, 
+            "mount": "/u01", 
+            "options": "rw,relatime,stripe=64,data=ordered", 
+            "size_available": 5835894784, 
+            "size_total": 49080414208, 
+            "uuid": "e1098d5f-2ed6-4160-8729-3bfe16a02ff6"
+        }, 
+        {
+            "block_available": 3467770, 
+            "block_size": 4096, 
+            "block_total": 11982523, 
+            "block_used": 8514753, 
+            "device": "/dev/mapper/vg_system-u02", 
+            "fstype": "ext4", 
+            "inode_available": 2021361, 
+            "inode_total": 3055616, 
+            "inode_used": 1034255, 
+            "mount": "/u02", 
+            "options": "rw,relatime,stripe=64,data=ordered", 
+            "size_available": 14203985920, 
+            "size_total": 49080414208, 
+            "uuid": "a34efb97-4181-46f6-982f-cffb85f15543"
+        }, 
+        {
+            "block_available": 98465645, 
+            "block_size": 32768, 
+            "block_total": 335544320, 
+            "block_used": 237078675, 
+            "device": "10.19.63.11:/PEFS-5401/", 
+            "fstype": "nfs", 
+            "inode_available": 6301801280, 
+            "inode_total": 21474836480, 
+            "inode_used": 15173035200, 
+            "mount": "/u03", 
+            "options": "rw,sync,relatime,vers=3,rsize=32768,wsize=32768,namlen=255,acregmin=0,acregmax=0,acdirmin=0,acdirmax=0,hard,noac,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.19.63.11,mountvers=3,mountport=300,mountproto=tcp,local_lock=none,addr=10.19.63.11", 
+            "size_available": 3226522255360, 
+            "size_total": 10995116277760, 
+            "uuid": "N/A"
+        }
+    ], 
+    "ansible_nodename": "gpldldora0008", 
+    "ansible_os_family": "RedHat", 
+    "ansible_pkg_mgr": "yum", 
+    "ansible_proc_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-3.10.0-1127.10.1.el7.x86_64", 
+        "LANG": "en_US.UTF-8", 
+        "crashkernel": "auto", 
+        "quiet": true, 
+        "rd.lvm.lv": [
+            "vg_system/root", 
+            "vg_system/swap"
+        ], 
+        "rhgb": true, 
+        "ro": true, 
+        "root": "/dev/mapper/vg_system-root"
+    }, 
+    "ansible_processor": [
+        "0", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "1", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "2", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "3", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "4", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "5", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "6", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "7", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "8", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "9", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "10", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "11", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "12", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "13", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "14", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "15", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "16", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "17", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "18", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "19", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "20", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "21", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "22", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+        "23", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz"
+    ], 
+    "ansible_processor_cores": 12, 
+    "ansible_processor_count": 1, 
+    "ansible_processor_threads_per_core": 2, 
+    "ansible_processor_vcpus": 24, 
+    "ansible_product_name": "ProLiant DL360 Gen9", 
+    "ansible_product_serial": "BRC74299L7", 
+    "ansible_product_uuid": "32353537-3835-5242-4337-343239394C37", 
+    "ansible_product_version": "NA", 
+    "ansible_python": {
+        "executable": "/usr/bin/python", 
+        "has_sslcontext": true, 
+        "type": "CPython", 
+        "version": {
+            "major": 2, 
+            "micro": 5, 
+            "minor": 7, 
+            "releaselevel": "final", 
+            "serial": 0
+        }, 
+        "version_info": [
+            2, 
+            7, 
+            5, 
+            "final", 
+            0
+        ]
+    }, 
+    "ansible_python_version": "2.7.5", 
+    "ansible_real_group_id": 0, 
+    "ansible_real_user_id": 0, 
+    "ansible_selinux": {
+        "status": "disabled"
+    }, 
+    "ansible_selinux_python_present": true, 
+    "ansible_service_mgr": "systemd", 
+    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOipopMHaUBHClfCjJaUMFUKWpOSf0wbXvoq605ioFuVrXXgnyn2p8CZnBqKi7IzYl50fnhpBwcMx0e6Wh0/FcA=", 
+    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIC5pJbh8rjj/51OQ9Qvra2V8Nw1IWHpAELeyVHY1zoKn", 
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDMdmDmogz/sYCVLI6SKOGym13bsILGNLiahBQRR1s473DlIdTd+K+rQoSyZTv8RIzEtshdW+AcL0XQ41xirT4+ppRXHxGzfuFmoOU02m4gnhCGYWeqzjr4v3hIPhBY/uW3uTI8vm8LnYLaTKJrML42V5UKqKBCbBYC9RbnOT6+dPG3fpL+xh65jv9qQZ24EYHzH9T8cbymxOnvxxm8lvmGKyIUclF3rv7YwbluLp/rwbUm5e3F1+leAMyHObWWdaHS34sFxM1jTbest1il//MVEWLosgURzQ3u2mHfjDqXHKb2A2yAYXVWQqgzdPdI8QBVs1Q5o8baJj92yewp7OD9", 
+    "ansible_swapfree_mb": 16090, 
+    "ansible_swaptotal_mb": 16211, 
+    "ansible_system": "Linux", 
+    "ansible_system_capabilities": [
+        "cap_chown", 
+        "cap_dac_override", 
+        "cap_dac_read_search", 
+        "cap_fowner", 
+        "cap_fsetid", 
+        "cap_kill", 
+        "cap_setgid", 
+        "cap_setuid", 
+        "cap_setpcap", 
+        "cap_linux_immutable", 
+        "cap_net_bind_service", 
+        "cap_net_broadcast", 
+        "cap_net_admin", 
+        "cap_net_raw", 
+        "cap_ipc_lock", 
+        "cap_ipc_owner", 
+        "cap_sys_module", 
+        "cap_sys_rawio", 
+        "cap_sys_chroot", 
+        "cap_sys_ptrace", 
+        "cap_sys_pacct", 
+        "cap_sys_admin", 
+        "cap_sys_boot", 
+        "cap_sys_nice", 
+        "cap_sys_resource", 
+        "cap_sys_time", 
+        "cap_sys_tty_config", 
+        "cap_mknod", 
+        "cap_lease", 
+        "cap_audit_write", 
+        "cap_audit_control", 
+        "cap_setfcap", 
+        "cap_mac_override", 
+        "cap_mac_admin", 
+        "cap_syslog", 
+        "35", 
+        "36+ep"
+    ], 
+    "ansible_system_capabilities_enforced": "True", 
+    "ansible_system_vendor": "HP", 
+    "ansible_uptime_seconds": 11697894, 
+    "ansible_user_dir": "/root", 
+    "ansible_user_gecos": "root", 
+    "ansible_user_gid": 0, 
+    "ansible_user_id": "root", 
+    "ansible_user_shell": "/bin/bash", 
+    "ansible_user_uid": 0, 
+    "ansible_userspace_architecture": "x86_64", 
+    "ansible_userspace_bits": "64", 
+    "ansible_virtualization_role": "host", 
+    "ansible_virtualization_type": "kvm", 
+    "discovered_interpreter_python": "/usr/bin/python", 
+    "gather_subset": [
+        "all"
+    ], 
+    "module_setup": true
+}

@@ -1,0 +1,31 @@
+---
+- name: Security Update
+  hosts: all
+  gather_facts: false
+  tasks:
+#    - name: Create fact directory
+#      file:
+#        path: "{{ item }}" 
+#        state: directory
+#        mode: '0775'
+#      loop:
+#        - /etc/ansible/facts.d/
+#        - /etc/locaweb/monitoring
+#    - name: Create a static custom fact foo
+#      copy:
+#        content: 1
+#        dest: "{{ item }}"
+#        #force: no
+#      loop:
+#        - /etc/ansible/facts.d/customtelegraf.fact
+#
+#    - name: Collect only facts returned by facter
+#      setup:
+#        filter: ansible_local 
+#
+#    - name: create file customalex.txt
+#      copy:
+#        content: 'custom facts'
+#        dest: /tmp/customalex.txt
+#      ignore_errors: yes
+#      when: ansible_local['sap'] == 1

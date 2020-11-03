@@ -1,0 +1,15 @@
+---
+# my.foreman.yml
+#plugin: foreman
+#cache: no
+#cache_plugin: jsonfile
+#cache_timeout: 10
+#cache_connection: /tmp/vmware_inventory
+#cache_prefix: vmware
+#url: https://corelcpup0001.ed.locaweb.com.br
+#user: alex.oliveira
+#password: ''
+#validate_certs: False
+  
+  
+  

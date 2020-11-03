@@ -1,0 +1,3 @@
+# proteus commands
+Cmnd_Alias PROTEUS_GATHERING = /bin/rm , /bin/chown , /bin/chmod , /bin/sh /tmp/[0-9]*/pr.sh *
+_carmel  ALL = NOPASSWD:EXEC: PROTEUS_GATHERING

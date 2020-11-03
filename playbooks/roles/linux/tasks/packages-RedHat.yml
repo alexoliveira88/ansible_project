@@ -1,0 +1,75 @@
+---
+#######################REPOSITORY#######################################
+- name: RHEL Repository Locaweb-Core.repo
+  copy:
+    src: yum.repos.d/Locaweb-Core.repo
+    dest: /etc/yum.repos.d/Locaweb-Core.repo
+    mode: '0600'
+    owner: root
+    group: root
+  tags: Files, Repository
+
+- name: RHEL Repository CentOS-Base.repo
+  copy:
+    src: yum.repos.d/CentOS-Base.repo
+    dest: /etc/yum.repos.d/CentOS-Base.repo
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_distribution == 'CentOS'
+  tags: Files, Repository
+
+- name: RHEL Repository Bacula
+  copy:
+    src: yum.repos.d/Bacula.repo_rhel{{ ansible_distribution_major_version }}
+    dest: /etc/yum.repos.d/Bacula.repo
+    mode: '0644'
+    owner: root
+    group: root
+  ignore_errors: yes
+  when: ansible_local['sap'] != 1
+  tags: Files, Repository
+
+########################Files############################################
+
+- name: RHEL Recursive DNS
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf
+    mode: '0644'
+    owner: root
+    group: root
+  when: (ansible_local['sap'] != 1 and ansible_local['openshift'] != 1 and ansible_local['isilon'] != 1 and ansible_local['sap_isilon'] != 1)
+  tags: Files, DNS
+
+- name: RHEL Recursive DNS to isilon 
+  copy:
+    src: resolv_dnsmasq.conf
+    dest: /etc/resolv.conf
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_local['isilon'] == 1
+  tags: Files, DNS
+########################Packages############################################
+- name: RHEL Family installation package
+  yum:
+    name: ['screen', 'tcpdump', 'openssh-server','postfix','tzdata', 'vim','ntp','telegraf','rsyslog','check-mk-agent-locaweb-plugins','telnet','bacula-enterprise-client' ]
+    state: installed
+  tags: Packages
+
+- name: install crowdstrike
+  package:
+    name: falcon-sensor
+    state: present
+  notify: 
+     - appliyng license crowdstrike
+     - restart falcon-sensor
+  tags: Packages, Antivirus
+
+- name: RHEL Family delete package
+  yum:
+    name: [ 'bacula-client','nagios-nrpe-server','leela-agent','leela-client', 'leela-c', 'leela-python', 'collectd' ]
+    state: removed
+  tags: packages
+

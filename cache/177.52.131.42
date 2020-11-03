@@ -1,0 +1,849 @@
+{
+    "_ansible_facts_gathered": true, 
+    "ansible_all_ipv4_addresses": [
+        "177.52.131.42", 
+        "10.10.131.42"
+    ], 
+    "ansible_all_ipv6_addresses": [
+        "fe80::250:56ff:fe01:535", 
+        "fe80::250:56ff:fe01:536"
+    ], 
+    "ansible_apparmor": {
+        "status": "disabled"
+    }, 
+    "ansible_architecture": "x86_64", 
+    "ansible_bios_date": "12/12/2018", 
+    "ansible_bios_version": "6.00", 
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-2.6.32-5-amd64", 
+        "console": "tty0", 
+        "quiet": true, 
+        "ro": true, 
+        "root": "/dev/sda2"
+    }, 
+    "ansible_date_time": {
+        "date": "2020-11-03", 
+        "day": "03", 
+        "epoch": "1604405238", 
+        "hour": "09", 
+        "iso8601": "2020-11-03T12:07:18Z", 
+        "iso8601_basic": "20201103T090718831724", 
+        "iso8601_basic_short": "20201103T090718", 
+        "iso8601_micro": "2020-11-03T12:07:18.831724Z", 
+        "minute": "07", 
+        "month": "11", 
+        "second": "18", 
+        "time": "09:07:18", 
+        "tz": "-03", 
+        "tz_offset": "-0300", 
+        "weekday": "Tuesday", 
+        "weekday_number": "2", 
+        "weeknumber": "44", 
+        "year": "2020"
+    }, 
+    "ansible_default_ipv4": {
+        "address": "177.52.131.42", 
+        "alias": "eth0", 
+        "broadcast": "177.52.131.255", 
+        "gateway": "177.52.131.1", 
+        "interface": "eth0", 
+        "macaddress": "00:50:56:01:05:35", 
+        "mtu": 1500, 
+        "netmask": "255.255.255.0", 
+        "network": "177.52.131.0", 
+        "type": "ether"
+    }, 
+    "ansible_default_ipv6": {}, 
+    "ansible_device_links": {
+        "ids": {}, 
+        "labels": {}, 
+        "masters": {}, 
+        "uuids": {
+            "sda1": [
+                "c4f43268-5dd5-4fea-9740-e38a48b76c00"
+            ], 
+            "sda2": [
+                "fa32621c-df54-4a23-9878-2fb45c24c891"
+            ], 
+            "sdb1": [
+                "4516d8b4-c704-48b1-86af-f772ae766e33"
+            ], 
+            "sdc1": [
+                "ecfcc00f-3044-453f-ac73-46841b572624"
+            ]
+        }
+    }, 
+    "ansible_devices": {
+        "loop0": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop1": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop2": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop3": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop4": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop5": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop6": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "loop7": {
+            "holders": [], 
+            "host": "", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": null, 
+            "partitions": {}, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "", 
+            "sectors": "0", 
+            "sectorsize": "512", 
+            "size": "0.00 Bytes", 
+            "support_discard": null, 
+            "vendor": null, 
+            "virtual": 1
+        }, 
+        "sda": {
+            "holders": [], 
+            "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "Virtual disk", 
+            "partitions": {
+                "sda1": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": [
+                            "c4f43268-5dd5-4fea-9740-e38a48b76c00"
+                        ]
+                    }, 
+                    "sectors": "192512", 
+                    "sectorsize": 512, 
+                    "size": "94.00 MB", 
+                    "start": "128", 
+                    "uuid": "c4f43268-5dd5-4fea-9740-e38a48b76c00"
+                }, 
+                "sda2": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": [
+                            "fa32621c-df54-4a23-9878-2fb45c24c891"
+                        ]
+                    }, 
+                    "sectors": "20774912", 
+                    "sectorsize": 512, 
+                    "size": "9.91 GB", 
+                    "start": "192640", 
+                    "uuid": "fa32621c-df54-4a23-9878-2fb45c24c891"
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "cfq", 
+            "sectors": "20969856", 
+            "sectorsize": "512", 
+            "size": "10.00 GB", 
+            "support_discard": null, 
+            "vendor": "VMware", 
+            "virtual": 1
+        }, 
+        "sdb": {
+            "holders": [], 
+            "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "Virtual disk", 
+            "partitions": {
+                "sdb1": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": [
+                            "4516d8b4-c704-48b1-86af-f772ae766e33"
+                        ]
+                    }, 
+                    "sectors": "2093056", 
+                    "sectorsize": 512, 
+                    "size": "1022.00 MB", 
+                    "start": "128", 
+                    "uuid": "4516d8b4-c704-48b1-86af-f772ae766e33"
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "cfq", 
+            "sectors": "2095360", 
+            "sectorsize": "512", 
+            "size": "1023.12 MB", 
+            "support_discard": null, 
+            "vendor": "VMware", 
+            "virtual": 1
+        }, 
+        "sdc": {
+            "holders": [], 
+            "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "Virtual disk", 
+            "partitions": {
+                "sdc1": {
+                    "holders": [], 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": [
+                            "ecfcc00f-3044-453f-ac73-46841b572624"
+                        ]
+                    }, 
+                    "sectors": "20964762", 
+                    "sectorsize": 512, 
+                    "size": "10.00 GB", 
+                    "start": "63", 
+                    "uuid": "ecfcc00f-3044-453f-ac73-46841b572624"
+                }
+            }, 
+            "removable": "0", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "cfq", 
+            "sectors": "20971520", 
+            "sectorsize": "512", 
+            "size": "10.00 GB", 
+            "support_discard": null, 
+            "vendor": "VMware", 
+            "virtual": 1
+        }, 
+        "sr0": {
+            "holders": [], 
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)", 
+            "links": {
+                "ids": [], 
+                "labels": [], 
+                "masters": [], 
+                "uuids": []
+            }, 
+            "model": "VMware IDE CDR00", 
+            "partitions": {}, 
+            "removable": "1", 
+            "rotational": "1", 
+            "sas_address": null, 
+            "sas_device_handle": null, 
+            "scheduler_mode": "cfq", 
+            "sectors": "2097151", 
+            "sectorsize": "512", 
+            "size": "1024.00 MB", 
+            "support_discard": null, 
+            "vendor": "NECVMWar", 
+            "virtual": 1
+        }
+    }, 
+    "ansible_distribution": "Debian", 
+    "ansible_distribution_major_version": "6", 
+    "ansible_distribution_release": "squeeze", 
+    "ansible_distribution_version": "6.0.10", 
+    "ansible_dns": {
+        "domain": "ananke.com.br", 
+        "nameservers": [
+            "4.2.2.1", 
+            "4.2.2.2", 
+            "8.8.8.8"
+        ]
+    }, 
+    "ansible_domain": "", 
+    "ansible_effective_group_id": 0, 
+    "ansible_effective_user_id": 0, 
+    "ansible_env": {
+        "HOME": "/root", 
+        "LANG": "en_US.UTF-8", 
+        "LANGUAGE": "en_US:en", 
+        "LOGNAME": "root", 
+        "MAIL": "/var/mail/root", 
+        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin", 
+        "PWD": "/home/alex.oliveira", 
+        "SHELL": "/bin/sh", 
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-nfmceopstqoiwdnclapohbvxxvuclwur ; /usr/bin/python /home/alex.oliveira/.ansible/tmp/ansible-tmp-1604405234.76-25590-148527726801827/AnsiballZ_setup.py", 
+        "SUDO_GID": "1034", 
+        "SUDO_UID": "1034", 
+        "SUDO_USER": "alex.oliveira", 
+        "TERM": "xterm-256color", 
+        "USER": "root", 
+        "USERNAME": "root"
+    }, 
+    "ansible_eth0": {
+        "active": true, 
+        "device": "eth0", 
+        "ipv4": {
+            "address": "177.52.131.42", 
+            "broadcast": "177.52.131.255", 
+            "netmask": "255.255.255.0", 
+            "network": "177.52.131.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::250:56ff:fe01:535", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "macaddress": "00:50:56:01:05:35", 
+        "module": "vmxnet3", 
+        "mtu": 1500, 
+        "pciid": "0000:03:00.0", 
+        "promisc": false, 
+        "speed": 10000, 
+        "type": "ether"
+    }, 
+    "ansible_eth1": {
+        "active": true, 
+        "device": "eth1", 
+        "ipv4": {
+            "address": "10.10.131.42", 
+            "broadcast": "10.10.255.255", 
+            "netmask": "255.255.0.0", 
+            "network": "10.10.0.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "fe80::250:56ff:fe01:536", 
+                "prefix": "64", 
+                "scope": "link"
+            }
+        ], 
+        "macaddress": "00:50:56:01:05:36", 
+        "module": "vmxnet3", 
+        "mtu": 1500, 
+        "pciid": "0000:0b:00.0", 
+        "promisc": false, 
+        "speed": 10000, 
+        "type": "ether"
+    }, 
+    "ansible_fibre_channel_wwn": [], 
+    "ansible_fips": false, 
+    "ansible_form_factor": "Other", 
+    "ansible_fqdn": "tm-aut-linux", 
+    "ansible_hostname": "tm-aut-linux", 
+    "ansible_hostnqn": "", 
+    "ansible_interfaces": [
+        "lo", 
+        "eth1", 
+        "eth0"
+    ], 
+    "ansible_is_chroot": false, 
+    "ansible_iscsi_iqn": "", 
+    "ansible_kernel": "2.6.32-5-amd64", 
+    "ansible_kernel_version": "#1 SMP Tue May 13 16:34:35 UTC 2014", 
+    "ansible_lo": {
+        "active": true, 
+        "device": "lo", 
+        "ipv4": {
+            "address": "127.0.0.1", 
+            "broadcast": "", 
+            "netmask": "255.0.0.0", 
+            "network": "127.0.0.0"
+        }, 
+        "ipv6": [
+            {
+                "address": "::1", 
+                "prefix": "128", 
+                "scope": "host"
+            }
+        ], 
+        "mtu": 16436, 
+        "promisc": false, 
+        "type": "loopback"
+    }, 
+    "ansible_local": {}, 
+    "ansible_lsb": {
+        "codename": "squeeze", 
+        "description": "Debian GNU/Linux 6.0.10 (squeeze)", 
+        "id": "Debian", 
+        "major_release": "6", 
+        "release": "6.0.10"
+    }, 
+    "ansible_machine": "x86_64", 
+    "ansible_machine_id": "03ed76a8eba23d995bea9d2c0012e6f1", 
+    "ansible_memfree_mb": 566, 
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 905, 
+            "used": 97
+        }, 
+        "real": {
+            "free": 566, 
+            "total": 1002, 
+            "used": 436
+        }, 
+        "swap": {
+            "cached": 5, 
+            "free": 940, 
+            "total": 1021, 
+            "used": 81
+        }
+    }, 
+    "ansible_memtotal_mb": 1002, 
+    "ansible_mounts": [
+        {
+            "block_available": 56096, 
+            "block_size": 1024, 
+            "block_total": 93207, 
+            "block_used": 37111, 
+            "device": "/dev/sda1", 
+            "fstype": "ext3", 
+            "inode_available": 23871, 
+            "inode_total": 24096, 
+            "inode_used": 225, 
+            "mount": "/boot", 
+            "options": "rw", 
+            "size_available": 57442304, 
+            "size_total": 95443968, 
+            "uuid": "c4f43268-5dd5-4fea-9740-e38a48b76c00"
+        }, 
+        {
+            "block_available": 2408759, 
+            "block_size": 4096, 
+            "block_total": 2579457, 
+            "block_used": 170698, 
+            "device": "/dev/sdc1", 
+            "fstype": "ext4", 
+            "inode_available": 655086, 
+            "inode_total": 655360, 
+            "inode_used": 274, 
+            "mount": "/backup", 
+            "options": "rw", 
+            "size_available": 9866276864, 
+            "size_total": 10565455872, 
+            "uuid": "ecfcc00f-3044-453f-ac73-46841b572624"
+        }, 
+        {
+            "block_available": 2114137, 
+            "block_size": 4096, 
+            "block_total": 2576366, 
+            "block_used": 462229, 
+            "device": "/dev/sda2", 
+            "fstype": "ext3", 
+            "inode_available": 610929, 
+            "inode_total": 650240, 
+            "inode_used": 39311, 
+            "mount": "/", 
+            "options": "rw,errors=remount-ro", 
+            "size_available": 8659505152, 
+            "size_total": 10552795136, 
+            "uuid": "fa32621c-df54-4a23-9878-2fb45c24c891"
+        }
+    ], 
+    "ansible_nodename": "tm-aut-linux", 
+    "ansible_os_family": "Debian", 
+    "ansible_pkg_mgr": "apt", 
+    "ansible_proc_cmdline": {
+        "BOOT_IMAGE": "/vmlinuz-2.6.32-5-amd64", 
+        "console": "tty0", 
+        "quiet": true, 
+        "ro": true, 
+        "root": "/dev/sda2"
+    }, 
+    "ansible_processor": [
+        "0", 
+        "GenuineIntel", 
+        "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz"
+    ], 
+    "ansible_processor_cores": 1, 
+    "ansible_processor_count": 1, 
+    "ansible_processor_threads_per_core": 1, 
+    "ansible_processor_vcpus": 1, 
+    "ansible_product_name": "VMware Virtual Platform", 
+    "ansible_product_serial": "VMware-42 38 c4 54 40 53 35 ea-07 59 45 ad 6b 5f a2 6a", 
+    "ansible_product_uuid": "4238C454-4053-35EA-0759-45AD6B5FA26A", 
+    "ansible_product_version": "None", 
+    "ansible_python": {
+        "executable": "/usr/bin/python", 
+        "has_sslcontext": false, 
+        "type": "CPython", 
+        "version": {
+            "major": 2, 
+            "micro": 6, 
+            "minor": 6, 
+            "releaselevel": "final", 
+            "serial": 0
+        }, 
+        "version_info": [
+            2, 
+            6, 
+            6, 
+            "final", 
+            0
+        ]
+    }, 
+    "ansible_python_version": "2.6.6", 
+    "ansible_real_group_id": 0, 
+    "ansible_real_user_id": 0, 
+    "ansible_selinux": {
+        "status": "Missing selinux Python library"
+    }, 
+    "ansible_selinux_python_present": false, 
+    "ansible_service_mgr": "sysvinit", 
+    "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAOr30P+J7R2U6iq52M9pmMN8FdB+dPA5iA0HKISNJ3KipeE9sNEsJ8vrFuNTE8NKXWUm1b1v3/SepLSYAYPOk1KnhEj2kvHpayGzw7pgFFDEmtkV3/ubudr4R4EahZ9iv/B3kxxG1jVD8RKM4UKA7byI3CMhm+nS0hoi1QlBc+kZAAAAFQCdVuho91aJF5nvfJ4Afu8zp4CnpwAAAIB+CxH4NLmVcES+8mXGpRVJUePYrqeQ/mWNHKFvWpwtffY+RoLMJGHNw7teFwRWWBsARlS+fw/kHsgAPYgqJ84akOHuL+zLMagQ1kW0txBvFaKsk8O84abUtmpBcl9UX59tNYT7q+drtRC5zKFrCt4laIbAOyS04wDmisy7yzDsNwAAAH9PY1TbpfjdksBB9Cf67mKRlKhLQXHym8dzMX+bJpmgZEXavaAviJ41+m05+GBRmrAsJLkz78StZ2TBOF7JBQk6CO9dGkZVn975oYH/7v/iiZ4D1mITauImZtC1EOCLtwXQqWaf1lSebMSjS5aGKK03ZQzVXKd4Qlwlj6SpnBbb", 
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDSJSPD+5SLdbfDWFuHhM+CdF/RgyUQb93lsUEEsQHLBTk2Ae/6lHG+CbSxdgTZ0eHqQk/86lrOq6NrVCyTQIvZAB+pSYsgmXcpJySQSTQen3VFtAdJ97pJBAPocS6l9OQiPQz7aIsZ1c6CBrwBIOcNZCDH3KoCoyTl8XK01A9kCfpGlGz/uey7B6TEhAf81vuci46Ipcs4ACElK1v5BzPAcuXML62lMXlV1PDoRkiH0hhXCGwljgsLGAHZjiD+14LPU1ToEVahV9Eei8V69D9UNAcVjoPbRaIKiqNmgFzMlxgbPCTiGRizpxVdu+gLSGolQ5QPcHkcnGK+e2V/cjsn", 
+    "ansible_swapfree_mb": 940, 
+    "ansible_swaptotal_mb": 1021, 
+    "ansible_system": "Linux", 
+    "ansible_system_vendor": "VMware, Inc.", 
+    "ansible_uptime_seconds": 16316265, 
+    "ansible_user_dir": "/root", 
+    "ansible_user_gecos": "root", 
+    "ansible_user_gid": 0, 
+    "ansible_user_id": "root", 
+    "ansible_user_shell": "/bin/bash", 
+    "ansible_user_uid": 0, 
+    "ansible_userspace_architecture": "x86_64", 
+    "ansible_userspace_bits": "64", 
+    "ansible_virtualization_role": "guest", 
+    "ansible_virtualization_type": "VMware", 
+    "discovered_interpreter_python": "/usr/bin/python", 
+    "facter_architecture": "amd64", 
+    "facter_augeasversion": "0.7.2", 
+    "facter_bios_release_date": "12/12/2018", 
+    "facter_bios_vendor": "Phoenix Technologies LTD", 
+    "facter_bios_version": "6.00", 
+    "facter_blockdevice_sda_model": "Virtual disk", 
+    "facter_blockdevice_sda_size": 10736566272, 
+    "facter_blockdevice_sda_vendor": "VMware", 
+    "facter_blockdevice_sdb_model": "Virtual disk", 
+    "facter_blockdevice_sdb_size": 1072824320, 
+    "facter_blockdevice_sdb_vendor": "VMware", 
+    "facter_blockdevice_sdc_model": "Virtual disk", 
+    "facter_blockdevice_sdc_size": 10737418240, 
+    "facter_blockdevice_sdc_vendor": "VMware", 
+    "facter_blockdevice_sr0_model": "VMware IDE CDR00", 
+    "facter_blockdevice_sr0_size": 1073741312, 
+    "facter_blockdevice_sr0_vendor": "NECVMWar", 
+    "facter_blockdevices": "sda,sdb,sdc,sr0", 
+    "facter_boardmanufacturer": "Intel Corporation", 
+    "facter_boardproductname": "440BX Desktop Reference Platform", 
+    "facter_boardserialnumber": "None", 
+    "facter_concat_basedir": "/var/lib/puppet/concat", 
+    "facter_domain": "ananke.com.br", 
+    "facter_etckepper_puppet": false, 
+    "facter_facterversion": "2.4.6", 
+    "facter_filesystems": "btrfs,ext2,ext3,ext4,hfs,hfsplus,jfs,minix,msdos,ntfs,qnx4,reiserfs,ufs,vfat,xfs", 
+    "facter_fqdn": "tm-aut-linux.ananke.com.br", 
+    "facter_gid": "root", 
+    "facter_hardwareisa": "unknown", 
+    "facter_hardwaremodel": "x86_64", 
+    "facter_hostname": "tm-aut-linux", 
+    "facter_id": "root", 
+    "facter_interfaces": "eth0,eth1,lo", 
+    "facter_ip6tables_version": "1.4.8", 
+    "facter_ipaddress": "177.52.131.42", 
+    "facter_ipaddress_eth0": "177.52.131.42", 
+    "facter_ipaddress_eth1": "10.10.131.42", 
+    "facter_ipaddress_lo": "127.0.0.1", 
+    "facter_iptables_version": "1.4.8", 
+    "facter_is_pe": false, 
+    "facter_is_virtual": true, 
+    "facter_kernel": "Linux", 
+    "facter_kernelmajversion": "2.6", 
+    "facter_kernelrelease": "2.6.32-5-amd64", 
+    "facter_kernelversion": "2.6.32", 
+    "facter_last_run": "Tue Nov  3 09:07:18 -03 2020", 
+    "facter_lsbdistcodename": "squeeze", 
+    "facter_lsbdistdescription": "Debian GNU/Linux 6.0.10 (squeeze)", 
+    "facter_lsbdistid": "Debian", 
+    "facter_lsbdistrelease": "6.0.10", 
+    "facter_lsbmajdistrelease": "6", 
+    "facter_lsbminordistrelease": "0", 
+    "facter_macaddress": "00:50:56:01:05:35", 
+    "facter_macaddress_eth0": "00:50:56:01:05:35", 
+    "facter_macaddress_eth1": "00:50:56:01:05:36", 
+    "facter_manufacturer": "VMware, Inc.", 
+    "facter_memoryfree": "875.15 MB", 
+    "facter_memoryfree_mb": "875.15", 
+    "facter_memorysize": "1002.83 MB", 
+    "facter_memorysize_mb": "1002.83", 
+    "facter_mtu_eth0": 1500, 
+    "facter_mtu_eth1": 1500, 
+    "facter_mtu_lo": 16436, 
+    "facter_netmask": "255.255.255.0", 
+    "facter_netmask_eth0": "255.255.255.0", 
+    "facter_netmask_eth1": "255.255.0.0", 
+    "facter_netmask_lo": "255.0.0.0", 
+    "facter_network_eth0": "177.52.131.0", 
+    "facter_network_eth1": "10.10.0.0", 
+    "facter_network_lo": "127.0.0.0", 
+    "facter_operatingsystem": "Debian", 
+    "facter_operatingsystemmajrelease": "6", 
+    "facter_operatingsystemrelease": "6.0.10", 
+    "facter_os": {
+        "family": "Debian", 
+        "lsb": {
+            "distcodename": "squeeze", 
+            "distdescription": "Debian GNU/Linux 6.0.10 (squeeze)", 
+            "distid": "Debian", 
+            "distrelease": "6.0.10", 
+            "majdistrelease": "6", 
+            "minordistrelease": "0"
+        }, 
+        "name": "Debian", 
+        "release": {
+            "full": "6.0.10", 
+            "major": "6", 
+            "minor": "0"
+        }
+    }, 
+    "facter_os_maj_version": "6", 
+    "facter_osfamily": "Debian", 
+    "facter_partitions": {
+        "sda1": {
+            "filesystem": "ext3", 
+            "mount": "/boot", 
+            "size": "192512", 
+            "uuid": "c4f43268-5dd5-4fea-9740-e38a48b76c00"
+        }, 
+        "sda2": {
+            "filesystem": "ext3", 
+            "mount": "/", 
+            "size": "20774912", 
+            "uuid": "fa32621c-df54-4a23-9878-2fb45c24c891"
+        }, 
+        "sdb1": {
+            "filesystem": "swap", 
+            "size": "2093056", 
+            "uuid": "4516d8b4-c704-48b1-86af-f772ae766e33"
+        }, 
+        "sdc1": {
+            "filesystem": "ext4", 
+            "mount": "/backup", 
+            "size": "20964762", 
+            "uuid": "ecfcc00f-3044-453f-ac73-46841b572624"
+        }
+    }, 
+    "facter_path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin", 
+    "facter_physicalprocessorcount": 1, 
+    "facter_processor0": "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz", 
+    "facter_processorcount": 1, 
+    "facter_processors": {
+        "count": 1, 
+        "models": [
+            "Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz"
+        ], 
+        "physicalcount": 1
+    }, 
+    "facter_productname": "VMware Virtual Platform", 
+    "facter_ps": "ps -ef", 
+    "facter_puppet_vardir": "/var/lib/puppet", 
+    "facter_puppetversion": "3.8.7", 
+    "facter_root_home": "/root", 
+    "facter_rubyplatform": "x86_64-linux", 
+    "facter_rubysitedir": "/usr/local/lib/site_ruby/1.8", 
+    "facter_rubyversion": "1.8.7", 
+    "facter_selinux": false, 
+    "facter_serialnumber": "VMware-42 38 c4 54 40 53 35 ea-07 59 45 ad 6b 5f a2 6a", 
+    "facter_sshdsakey": "AAAAB3NzaC1kc3MAAACBAOr30P+J7R2U6iq52M9pmMN8FdB+dPA5iA0HKISNJ3KipeE9sNEsJ8vrFuNTE8NKXWUm1b1v3/SepLSYAYPOk1KnhEj2kvHpayGzw7pgFFDEmtkV3/ubudr4R4EahZ9iv/B3kxxG1jVD8RKM4UKA7byI3CMhm+nS0hoi1QlBc+kZAAAAFQCdVuho91aJF5nvfJ4Afu8zp4CnpwAAAIB+CxH4NLmVcES+8mXGpRVJUePYrqeQ/mWNHKFvWpwtffY+RoLMJGHNw7teFwRWWBsARlS+fw/kHsgAPYgqJ84akOHuL+zLMagQ1kW0txBvFaKsk8O84abUtmpBcl9UX59tNYT7q+drtRC5zKFrCt4laIbAOyS04wDmisy7yzDsNwAAAH9PY1TbpfjdksBB9Cf67mKRlKhLQXHym8dzMX+bJpmgZEXavaAviJ41+m05+GBRmrAsJLkz78StZ2TBOF7JBQk6CO9dGkZVn975oYH/7v/iiZ4D1mITauImZtC1EOCLtwXQqWaf1lSebMSjS5aGKK03ZQzVXKd4Qlwlj6SpnBbb", 
+    "facter_sshfp_dsa": "SSHFP 2 1 a6ce082ecd8cea423bcd24ba84ab8ede5d72ece8\nSSHFP 2 2 f8790fa67f76b908e9cdb008b71103f31d9a8d065eeb244990d7b8245ec74175", 
+    "facter_sshfp_rsa": "SSHFP 1 1 b4e66ffbe757d160e274dda75eccf7073f9a268c\nSSHFP 1 2 e5feab5eeb79beb08cdae23e00adf252e14244a3ff237ee28e004a0f0560c700", 
+    "facter_sshrsakey": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDSJSPD+5SLdbfDWFuHhM+CdF/RgyUQb93lsUEEsQHLBTk2Ae/6lHG+CbSxdgTZ0eHqQk/86lrOq6NrVCyTQIvZAB+pSYsgmXcpJySQSTQen3VFtAdJ97pJBAPocS6l9OQiPQz7aIsZ1c6CBrwBIOcNZCDH3KoCoyTl8XK01A9kCfpGlGz/uey7B6TEhAf81vuci46Ipcs4ACElK1v5BzPAcuXML62lMXlV1PDoRkiH0hhXCGwljgsLGAHZjiD+14LPU1ToEVahV9Eei8V69D9UNAcVjoPbRaIKiqNmgFzMlxgbPCTiGRizpxVdu+gLSGolQ5QPcHkcnGK+e2V/cjsn", 
+    "facter_stats_url": "", 
+    "facter_swapfree": "940.05 MB", 
+    "facter_swapfree_mb": "940.05", 
+    "facter_swapsize": "1021.99 MB", 
+    "facter_swapsize_mb": "1021.99", 
+    "facter_system_uptime": {
+        "days": 188, 
+        "hours": 4532, 
+        "seconds": 16316266, 
+        "uptime": "188 days"
+    }, 
+    "facter_timezone": "-03", 
+    "facter_type": "Other", 
+    "facter_uniqueid": "00000000", 
+    "facter_uptime": "188 days", 
+    "facter_uptime_days": 188, 
+    "facter_uptime_hours": 4532, 
+    "facter_uptime_seconds": 16316266, 
+    "facter_uuid": "4238C454-4053-35EA-0759-45AD6B5FA26A", 
+    "facter_virtual": "vmware", 
+    "gather_subset": [
+        "all"
+    ], 
+    "module_setup": true
+}

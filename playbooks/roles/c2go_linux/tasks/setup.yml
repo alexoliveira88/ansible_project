@@ -1,0 +1,12 @@
+---
+- name: Files that don't need to reloaded
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+
+  loop:
+    - { src: 'sudoers.d/Nextios-Sudo', dest: '/etc/sudoers.d/Nextios-Sudo', mode: '0440', owner: root, group: root }
+  tags: Files

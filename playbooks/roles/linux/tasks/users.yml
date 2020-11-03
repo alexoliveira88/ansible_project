@@ -1,0 +1,60 @@
+---
+- name: Block Nextios Users
+  block:
+    - name: Creating SysAdmins_Nextios group
+      group:
+        name: SysAdmins
+        state: present
+    
+    ### Nextios Users
+    - name:  add Nextios users 
+      user:
+        name: "{{ item }}"
+        group: SysAdmins
+        create_home: yes 
+        shell: /bin/bash
+        #append: false
+      ignore_errors: yes
+      loop:  "{{ nextios_usersadd }}"
+    
+    - name: Set authorized key to SysAdmins
+      authorized_key:
+        user: "{{ item }}"
+        state: present
+        exclusive: yes
+        key: "{{ lookup('file', '/home/{{ item }}/.ssh/id_rsa.pub') }}"
+        key_options: 'from="10.33.92.4,10.33.92.6,186.202.36.82,186.202.36.93,186.202.40.206"'
+      loop:  "{{ nextios_usersadd }}"
+
+#    - name:  Deleting Nextios users
+#      user:
+#        name: "{{ item }}"
+#        state: absent
+#        remove: yes
+#      loop:  "{{ nextios_usersdel }}"
+    
+    ### SEC Users
+    - name:  add Sec users
+      user:
+        name: "{{ item }}"
+        create_home: yes
+        shell: /bin/bash
+      loop:
+        - _carmel
+        - _myael
+      tags: Users
+    
+    - name: Set authorized key to Sec users
+      authorized_key:
+        user: "{{ item.user }}"
+        state: present
+        exclusive: yes
+        key: "{{ item.key }}"
+        key_options: "{{ item.key_options }}"
+      loop:
+        - { user: _carmel, key: "{{ lookup('file', '/etc/ansible/playbooks/roles/linux/files/ssh/_carmel.pub') }}", key_options: 'from="10.0.7.4,186.202.36.39"' }
+        - { user: _myael, key: "{{ lookup('file', '/etc/ansible/playbooks/roles/linux/files/ssh/_myael.pub') }}", key_options: 'from="10.0.7.34,10.30.173.230,10.30.173.229,10.30.173.228,10.30.173.227,10.30.173.226,186.202.36.40,179.188.13.118,179.188.13.116,179.188.13.114,179.188.13.117,179.188.13.115"' }
+  when: ansible_local['pci_wex'] != 1
+  tags: Users
+
+

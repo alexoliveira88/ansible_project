@@ -1,0 +1,63 @@
+---
+#######################REPOSITORY#######################################
+
+- name: RHEL Repository Locaweb-Core.repo
+  copy:
+    src: yum.repos.d/Locaweb-Core.repo
+    dest: /etc/yum.repos.d/Locaweb-Core.repo
+    mode: '0644'
+    owner: root
+    group: root
+  tags: Files
+
+- name: RHEL Repository CentOS-Base.repo
+  copy:
+    src: yum.repos.d/CentOS-Base.repo
+    dest: /etc/yum.repos.d/CentOS-Base.repo
+    mode: '0644'
+    owner: root
+    group: root
+  tags: Files
+
+##- name: Repository Bacula RHEL 7
+##  copy:
+##    src: yum.repos.d/Bacula.repo_rhel7
+##    dest: /etc/yum.repos.d/Bacula.repo
+##    mode: '0644'
+##    owner: root
+##    group: root
+##  when: ansible_distribution_major_version == "7"
+##  tags: Files
+##
+##- name: Repository Bacula RHEL 6
+##  copy:
+##    src: yum.repos.d/Bacula.repo_rhel6
+##    dest: /etc/yum.repos.d/Bacula.repo
+##    mode: '0644'
+##    owner: root
+##    group: root
+##  when: ansible_distribution_major_version == "6"
+##  tags: Files
+
+########################Packages Redhat############################################
+- name: RHEL Family installation package
+  yum:
+    name: [ 'screen','tcpdump','openssh-server','bind-utils','postfix','tzdata', 'vim','mlocate','chrony','nfs-utils','curl','wget','telegraf','sssd','rsyslog','check-mk-agent-locaweb-plugins','telnet','yum-utils' ]
+    state: installed
+  tags: Packages
+
+- name: install crowdstrike
+  package:
+    name: falcon-sensor
+    state: present
+  notify: 
+     - appliyng license crowdstrike
+     - restart falcon-sensor
+  tags: Packages
+
+- name: RHEL Family delete package
+  yum:
+    name: [ 'bacula-client','ntp','dhcp' ]
+    state: removed
+  tags: Packages, Hardening
+

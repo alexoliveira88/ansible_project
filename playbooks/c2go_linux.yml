@@ -1,0 +1,7 @@
+---
+- name: Execute roles to generic Linux environment 
+  hosts: all
+  gather_facts: true
+  roles:
+    - {role: c2go_linux}
+

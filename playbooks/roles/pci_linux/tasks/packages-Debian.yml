@@ -1,0 +1,44 @@
+---
+#######################REPOSITORY#######################################
+- name: Repository Debian 7
+  copy:
+    src: apt/sources.list_7
+    dest: /etc/apt/sources.list
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_distribution_major_version == '7'
+  tags: Files
+
+- name: Repository Debian 9
+  copy:
+    src: apt/sources.list_9
+    dest: /etc/apt/sources.list
+    mode: '0644'
+    owner: root
+    group: root
+  when: ansible_distribution_major_version == '9'
+  tags: Files
+
+########################Packages Debian##################################
+- name: Debian Family installation package
+  apt:
+     name: [ 'screen','tcpdump','apt-transport-https','dnsutils','postfix','tzdata', 'bash-completion','vim','mlocate','nfs-common','curl','wget','telnet','telegraf','sssd','rsyslog','sudo','chrony' ]
+     update_cache: yes
+     state: present
+  tags: Packages
+
+- name: install crowdstrike
+  apt:
+    name: falcon-sensor
+    update_cache: yes
+    state: present
+  notify: appliyng license crowdstrike
+  tags: Packages
+
+- name: Debian Family delete package
+  apt:
+    name: [ 'bacula-fd','bacula-common','ntp','dhcp']
+    state: absent
+  tags: Packages, Hardening
+

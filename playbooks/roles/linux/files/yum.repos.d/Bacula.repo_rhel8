@@ -1,0 +1,5 @@
+[Bacula]
+name=Bacula Enterprise Packages for Enterprise Linux 8 - 64
+https://www.baculasystems.com/dl/Locaweb-aikieB4u/rpms/bin/12.2.4/rhel8-64/
+enabled=1
+gpgcheck=0

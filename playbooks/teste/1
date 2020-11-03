@@ -1,0 +1,25 @@
+---
+- name: Security Update
+  hosts: all
+  gather_facts: true
+  tasks:
+#    - name: Stopped and disabled Services
+#      service:
+#        name: '{{ item }}'
+#        enabled: no
+#        state: stopped
+#      loop:
+#      - nagios-nrpe-server
+#      - leela-agent
+#      - collectd
+#      - uptimed
+#      - motd  
+##      when: ansible_local['openshift'] != 1
+
+    - name: Linux remove package
+      package:
+    #    #name: [ 'screen','tcpdump','openssh-server','bind-utils','postfix','tzdata', 'vim','mlocate','ntp','ntpdate','nfs-utils','curl','wget','telegraf','rsyslog','check-mk-agent-locaweb-plugins','telnet','bacula-enterprise-client' ]
+        #name: [ 'nagios-nrpe-server','leela-agent', 'collectd', 'uptimed', 'motd' ]
+        name: [ 'nagios-nrpe-server']
+        state: absent
+

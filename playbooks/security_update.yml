@@ -1,0 +1,14 @@
+---
+- name: Security Update
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: adjusting repositories
+      shell: /usr/bin/yum-config-manager --disable \* ; yum-config-manager --enable core\* Bacula base updates extras centosplus rhel-[6-7]-server-rpms rhel-[6-7]-server-satellite-tools-6.3-rpms rhel-7-server-ansible-2.9-rpms
+     #shell: /usr/bin/yum-config-manager --disable \* ; yum-config-manager --enable rhel-[6-7]-server-rpms rhel-[6-7]-server-satellite-tools-6.3-rpms
+      when: (ansible_os_family == 'RedHat' and ansible_hostname != 'coreldsat0001')
+
+    - name: RHEL Family security update
+      shell: /usr/bin/yum update ntp ntpdate rsyslog curl wget telnet perl sudo tcpdump git vim vim-common vim-enhanced vim-filesystem vim-minimal expat gettext ppp elfutils libwmf patch -y
+      ignore_errors: yes
+      when: ansible_os_family == 'RedHat'

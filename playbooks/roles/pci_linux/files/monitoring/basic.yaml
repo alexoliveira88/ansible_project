@@ -1,0 +1,74 @@
+## Managed by Ansible
+
+application-name: PCI_ED
+
+provides:
+   - PCI_ED
+
+monitoring:
+
+   - service: Check_MK
+     priority: 1
+
+   - service: Porta_SSH_TCP_22
+     port: 22
+     check: local
+     item: tcp
+     sla: False
+     priority: 1
+
+   - service: Processo_rsyslogd
+     doc: Verifica se existem processos rsyslogd em execucao
+     check: local
+     item: process_running
+     proc_name: rsyslogd
+     sla: False
+     priority: 1
+
+   - service:  Processo_chronyd
+     doc: Check if there is any chronyd process running
+     check: local
+     item: process_running
+     proc_name: chronyd
+     sla: False
+     priority: 2
+
+   - service: ossec-logcollector
+     doc: Verifica se existem processos ossec-logcollector em execucao
+     check: local
+     item: process_running
+     proc_name: ossec-logcollec
+     sla: False
+     priority: 1
+
+   - service: ossec-syscheckd
+     doc: Verifica se existem processos ossec-analysisd em execucao
+     check: local
+     item: process_running
+     proc_name: ossec-syscheckd
+     sla: False
+     priority: 1
+
+   - service: Processo_falcon-sensor
+     doc: Verifica se existem processos falcon-sensor em execucao
+     check: local
+     item: process_running
+     proc_name: falcon-sensor
+     sla: False
+     priority: 1
+
+#- service: Processo_klnagent
+#     doc: Verifica se existem processos klnagent em execucao
+#     check: local
+#     item: process_running
+#     proc_name: klnagent
+#     sla: False
+#     priority: 1
+#
+#   - service:  Processo_kesl-supervisor
+#     doc: Verifica se existem processos kesl-supervisor em execucao
+#     check: local
+#     item: process_running
+#     proc_name: kesl
+#     sla: False
+#     priority: 1

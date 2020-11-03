@@ -1,0 +1,3 @@
+playbooks/roles/pci_linux/tasks/users.yml
+playbooks/roles/pci_linux/files/sssd.conf
+host*
