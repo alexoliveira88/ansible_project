@@ -27,7 +27,7 @@
     state: restarted
 
 - name: appliyng license crowdstrike 
-  shell: /opt/CrowdStrike/falconctl -s --cid=B9A12D4C117241D5A9E291BCDE89BF6E-28 -f
+  shell: /opt/CrowdStrike/falconctl -s --cid=preencher -f
 
 - name: enable sssd
   shell: /usr/sbin/authconfig --update --enablesssd --enablesssdauth --enablemkhomedir
