@@ -1,5 +1,0 @@
-deb http://debian.mirror.locaweb.com.br/debian/ stretch main non-free contrib
-deb http://debian.mirror.locaweb.com.br/debian/ stretch-updates main contrib non-free
-deb http://debian.mirror.locaweb.com.br/debian-security/ stretch/updates main contrib non-free
-deb [trusted=yes] http://pacotes.linux.locaweb.com.br/core_stretch/debian stable main contrib non-free
-deb https://www.baculasystems.com/dl/Locaweb-aikieB4u/debs/bin/12.2.4/stretch-64/ stretch main
